@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900&display=swap');
+/*---CONTENT----*/
+.content {
+    margin-right: 12rem;
+    margin-left: 12rem;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    color: #3E3E3E;
+    text-align: justify;
+    line-height: 3rem;
+}
+.content p {
+    margin-bottom: 1.5rem;
+}
