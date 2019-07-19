@@ -9,6 +9,156 @@
     text-align: justify;
     /* line-height: 3rem; */
 }
-.content p {
+#companyProfile p {
     margin-bottom: 1.5rem;
 }
+.officer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* text-align: center;
+    justify-content: center; */
+}
+.officer-img {
+    border-style: solid;
+}
+/* .officer-info {
+    margin-left: -2rem;
+} */
+.officer-name {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #00A8FB;
+    margin-bottom: unset !important;
+    /* text-align: center; */
+}
+.officer-position {
+    font-size: 1.25rem;
+    /* text-align: center; */
+}
+
+table{
+    margin: 2rem auto 0rem;
+}
+.yr-title {
+    color: #00A8FB;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.first-col {
+    padding-right: 2rem;
+    text-align: right;
+}
+.colon {
+    padding-right: 2rem;
+}
+
+.pres-img {
+    display: block;
+
+}
+.pres-img img {
+    height: auto;
+    border-style: solid;
+}
+.pres-name {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: -1rem !important;
+}
+.quotation {
+    display: flex;
+}
+.quote {
+    color: #00A8FB;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.text {
+    margin-left: 2rem;
+}
+.flag {
+    margin-top: 4rem;
+    display: flex;
+}
+.flag img{
+    margin-left: .5rem;
+    margin-right: 1.5rem;
+    height: 3rem;
+    border: 1px solid #3E3E3E;
+}
+.flag p{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.com-name{
+    font-size: 2rem;
+    color: rgb(67, 192, 255);
+}
+.website {
+    font-size: 1.25rem;
+    margin-top: -1.5rem !important;
+    padding-right: 1rem;
+    display: flex;
+    color: rgb(67, 192, 255);
+}
+.website p{
+    padding-right: .5rem;
+}
+.ofc {
+    font-weight: bold;
+}
+.address, .tel{
+    margin-top: -1.5rem;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+/* ---Media Queries---*/
+
+@media (max-width: 992px) {
+    .officer {
+        grid-auto-flow: column; 
+        /* width: 60%; */
+        /* display: block; */
+    }
+}
+@media (max-width: 768px) {
+    .officer-info {
+        width: 60%;
+        display: block;
+    }
+}
+@media (max-width: 596px) {
+}
+@media (max-width: 526px) {
+}
+@media (max-width: 383px) {
+}
+@media (max-width: 337px) {
+}
+
+
+
+/*========== BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default on Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200 px) { ... }
+
+=============*/
