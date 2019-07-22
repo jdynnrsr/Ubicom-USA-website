@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900&display=swap');
 @import url('footer-link.css');
 @import url('company.css');
+@import url('services.css');
+
+
 html {
     height: 100%;
     width: 100%;
@@ -8,6 +11,7 @@ html {
 body{
     font-family: 'Roboto', sans-serif !important;
     color: #707070;
+    font-size: unset;
     /* height: 100%; */
     width: 100%;
     overflow-y: auto;
@@ -56,29 +60,28 @@ nav.navbar {
     justify-content: center;
 }
 
+.previous-page {
+    font-size: 1rem;
+    margin-top: 2%;
+    margin-left: 7%;
+}
 .previous-page i {
-    margin-left: 7rem;
     color: #00A8FB;
 }
 .previous-page label{
-    padding-top: 2rem;
-    padding-left: .5rem;
+    padding-left: 1%;
 }
 
 .header {
-    margin-bottom: 2rem;
-    display: block;
-    font-size: 3rem !important;
+    color: #00A8FB;
+    margin-bottom: 1%;
     font-weight: 500;
     text-align: center;
-    color: #00A8FB;
+    font-size: 3rem !important;
 }
 
 /*---FOOTER----*/
 footer {
-    margin-right: -50rem !important;
-    padding-left: -50rem !important;
-    margin-top: 5rem;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     position: bottom;
@@ -88,25 +91,23 @@ footer {
     width: 100%;
     height: 100px;
     background-color: #00A8FB;
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    line-height: .75rem;
 }
-div.footer-label {
-    padding-top: 1.5rem !important;
-    padding-left: 4rem !important;
-    padding-right: 4rem !important;
-    font-size: 1rem;
+footer label {
+    margin-bottom: .05%;
 }
-.company-info {
-    margin-bottom: -23px;  
+.footer-label {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
 }
-.company-info label label {
-    margin-right: 10px;
+.footer-label div{
+    font-size: 2vmin;
 }
 .footer-item {
     text-align: right;
-    margin-bottom: -23px;
-}
-.footer-link {
-    margin-right: 10px;
 }
 
 
@@ -117,7 +118,7 @@ div.footer-label {
 
 
 /* ---Media Queries---*/
-@media (max-width: 1070px) {
+@media (max-width: 1100px) {
     .navbar-logo {
         margin-left: 4rem;
     }
@@ -128,31 +129,23 @@ div.footer-label {
         font-size: 22px;
         padding-left: 20px;
     }
+    .previous-page {
+        font-size: .8rem;
+    }
     .header {
-        margin-bottom: 1.5rem;
         font-size: 2.5rem !important;
     }
     footer {
         height: 90px;
+        line-height: 1.5rem;
     }
     div.footer-label {
         text-align: center;
-        padding-top: .85rem !important;
-        font-size: .9rem;
-    }
-    .company-info {
-        margin-bottom: -20px;
-    }
-    .company-info label label {
-        margin-right: 10px;
     }
     .footer-item {
         text-align: center;
-        margin-bottom: -10px;
     }
-    .footer-link {
-        margin-right: 10px;
-    }
+    
 }
 @media (max-width: 768px) {
     .navbar-logo {
@@ -167,6 +160,9 @@ div.footer-label {
         padding-left: 15px;
         text-align: right;
     }
+    .previous-page {
+        font-size: .7rem;
+    }
     .header {
         margin-bottom: 1rem;
         font-size: 2rem !important;
@@ -174,40 +170,18 @@ div.footer-label {
     footer {
         height: 70px;
     }
-    div.footer-label {
-        font-size: .7rem;
-    }
 }
 @media (max-width: 596px) {
     .header {
-        margin-bottom: .75rem;
         font-size: 1.5rem !important;
     }
     nav.navbar{
         height: 4rem;
     }
-    div.footer-label {
-        font-size: 12px;
-        margin-top: -5px;
-    }
 }
 @media (max-width: 526px) {
     .header {
         font-size: 1rem;
-    }
-    .previous-page{
-        padding-left: -2rem;
-        font-size: .75rem;
-    }
-    div.footer-label {
-        font-size: 10px;
-        padding-top: .45rem !important;
-    }
-    .company-info label label {
-        margin-bottom: -15px;
-    }
-    .footer-item {
-        margin-top: 10px;
     }
 }
 @media (max-width: 383px) {
@@ -222,17 +196,14 @@ div.footer-label {
         font-size: .75rem;
         padding: .2rem .1rem !important;
     }
+    .previous-page {
+        font-size: .6rem;
+    }
     .header {
-        margin-bottom: .75rem;
         font-size: 1.25rem !important;
     }
     footer {
         height: 50px;
-    }
-    div.footer-label {
-        font-size: 7px;
-        padding-top: .5rem !important;
-        margin-top: -30px;
     }
 }
 @media (max-width: 337px) {
@@ -250,11 +221,6 @@ div.footer-label {
     }
     .nav-link {
         font-size: .5rem;
-    }
-    
-    div.footer-label {
-        font-size: 6.5px;
-        margin-top: -8px;
     }
 }
 
