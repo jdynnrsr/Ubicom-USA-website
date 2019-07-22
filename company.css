@@ -10,8 +10,8 @@
     text-align: justify;
 }
 #Company hr {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 7%;
+    margin-bottom: 7%;
     border-top: 1px solid rgba(0, 0, 0, 0.35);
 }
 #companyProfile {
@@ -195,11 +195,6 @@
         margin-left: 8rem;
         font-size: 100%;
     }
-    #Company hr {
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-        border-top: 1px solid rgba(0, 0, 0, 0.35);
-    }
     #companyProfile p {
         line-height: 1.5rem;
     }
@@ -245,11 +240,6 @@
     #Company {
         margin-right: 6rem;
         margin-left: 6rem;
-    }
-    #Company hr {
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-        border-top: 1px solid rgba(0, 0, 0, 0.35);
     }
     #officer {
         margin-top: 1.25rem;
@@ -317,8 +307,6 @@
         font-size: 90%;
     }
     #Company hr {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
         border-top: 1px solid rgba(0, 0, 0, 0.164);
     }
     #officer {
@@ -371,11 +359,6 @@
         margin-right: 3rem;
         margin-left: 3rem;
         font-size: 90%;
-    }
-    #Company hr {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        border-top: 1px solid rgba(0, 0, 0, 0.164);
     }
     #officer {
         margin-top: 1rem;
@@ -436,11 +419,6 @@
         margin-right: 2rem;
         margin-left: 2rem;
         font-size: 90%;
-    }
-    #Company hr {
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-        border-top: 1px solid rgba(0, 0, 0, 0.164);
     }
     #history p{
         padding-right: .2rem;
