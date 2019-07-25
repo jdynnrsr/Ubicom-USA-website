@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900&display=swap');
+
+#Solutions {
+    margin-right: 12% !important;
+    margin-left: 12% !important;
+    font-size: 1.3rem;
+    line-height: 190%;
+    text-align: justify;
+}
+#Solutions hr {
+    margin-top: 6.5%;
+    margin-bottom: 6.5%;
+    border-top: 1px solid rgba(0, 0, 0, 0.35);
+}
+.solution-img {
+    width: 100%;
+}
+.title {
+    color: #00A8FB;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.left {
+    padding-left: 0% !important;
+    padding-right: 4% !important;
+}
+.right {
+    padding-left: 4% !important;
+    padding-right: 0% !important;
+}
+
+
+
+
+
+
+/* ---Media Queries---*/
+@media (max-width: 1100px) {
+    #Solutions {
+        font-size: 1rem;
+    }
+    .title {
+        font-size: 1.75rem;
+    }
+}
+@media (max-width: 768px) {
+    #Solutions {
+        font-size: .9rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 596px) {
+    #Solutions {
+        font-size: .8rem;
+    }
+    .title {
+        font-size: 1.25rem;
+    }
+}
+@media (max-width: 526px) {
+    .title {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 383px) {
+    #Solutions {
+        font-size: .7rem;
+    }
+    .title {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 337px) {
+    .title {
+        font-size: .9rem;
+    }
+}
+
+/*========== BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default on Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200 px) { ... }
+
+=============*/
