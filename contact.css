@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900&display=swap');
+
+#Contact {
+    font-size: 1.5rem !important;
+    margin-bottom: 5rem;
+}
+#Contact .contact-label {
+    color:  #3E3E3E !important;
+    text-align: center;
+    font-size: 100% !important;
+}
+#Contact label {
+    margin-bottom: 3%;
+    font-size: 110%;
+    font-weight: 500;
+    display: block !important;
+}
+#Contact ::placeholder{
+    font-style: italic;
+    font-size: 90%
+}
+#Contact .name {
+    display: -webkit-box;
+    padding-right: 2%;
+}
+#Contact .fname {
+    margin-right: 2%;
+}
+
+#Contact input {
+    display: block;
+    font-weight: normal !important;
+    padding-left: 2%;
+    width: 100%;
+    font-size: 90%;
+    margin-top: 1% !important;
+    /* height: 2.5rem; */
+}
+#Contact textarea {
+    display: block;
+    font-weight: normal !important;
+    padding-left: 2%;
+    width: 100%;
+    font-size: 90%;
+    height: 15rem;
+}
+#Contact form p {
+    font-size: 60%;
+    color: rgb(182, 0, 0);
+    margin-bottom: unset;
+}
+#Contact .required {
+    color:  #3E3E3E !important;
+    font-size: 90%;
+    font-style: italic;
+}
+
+#Contact button {
+    color: white;
+    font-weight: 500;
+    background: #FF333B;
+    font-size: 110%;
+    border-radius: 0% !important;
+    float: right !important;
+}
+
+
+
+
+
+/* ---Media Queries---*/
+@media (max-width: 1200px) { 
+    #Contact {
+        font-size: 1.25rem !important;
+    }
+    #Contact p {
+        margin-bottom: normal;
+    }
+}
+@media (max-width: 992px) {
+    #Contact {
+        font-size: 1.1rem !important;
+    }
+}
+@media (max-width: 767px) {
+    #Contact {
+        font-size: 1rem !important;
+        padding-left: 12% !important;
+        padding-right: 12% !important;
+    }
+    #Contact p {
+        font-size: 70%;
+    }
+    #Contact textarea {
+        height: 13rem;
+    }
+}
+@media (max-width: 596px) {
+    #Contact {
+        font-size: .9rem !important;
+    }
+    #Contact p {
+        font-size: 75%;
+    }
+    #Contact textarea {
+        height: 11rem;
+    }
+}
+@media (max-width: 526px) {
+    #Contact {
+        font-size: .8rem !important;
+    }
+    #Contact textarea {
+        height: 10rem;
+    }
+}
+@media (max-width: 383px) {
+    #Contact {
+        font-size: .75rem !important;
+    }
+    #Contact textarea {
+        height: 8rem;
+    }
+}
+@media (max-width: 337px) {
+}
+
+/*========== BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default on Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200 px) { ... }
+
+=============*/

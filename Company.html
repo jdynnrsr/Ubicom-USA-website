@@ -11,6 +11,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://kit.fontawesome.com/40ac460209.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="./main.js"></script>
 </head>
 <body>
     <div id="container">
@@ -31,7 +33,7 @@
                             <a href="index.html" class="nav-link">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a href="Services.html" class="nav-link">SERVICES</a>
+                            <a href="Solutions.html" class="nav-link">SOLUTIONS</a>
                         </li>
                         <li class="nav-item">
                             <a href="Company.html" class="nav-link">COMPANY</a>
@@ -66,27 +68,14 @@
                 <p>
                     Let us help you navigate and thrive in the increasingly changing world of technology through strategic consulting, operational leadership, focus on excellence, and the co-creation of strategic breakthrough solutions.
                 </p>
-                <div id="officerContainer">
-                    <div id="officer">
-                        <div class="ofcr">
-                            <div>
-                                <img class="officer-img" src="/img/human icon.png" alt="Tadashi Ishikawa">
-                            </div>
-                            
-                            <div class="officer-info">
-                                <p class="officer-name">Tadashi Ishikawa</p>
-                                <p class="officer-position">President</p>
-                            </div>
-                        </div>
-                        <div class="ofcr">
-                            <div>
-                                <img class="officer-img" src="/img/human icon.png" alt="Kensuke Saito">
-                            </div>
-                            
-                            <div class="officer-info">
-                                <p class="officer-name">Kensuke Saito</p>
-                                <p class="officer-position">Treasurer</p>
-                            </div>
+                <div id="officer" class="row">
+                    <div class="ofcr col-lg-3 col-md-4 col-5 mx-auto">
+                        
+                            <img class="officer-img" src="/img/Solutions/President Ishikawa-san.png" alt="Tadashi Ishikawa">
+                                               
+                        <div class="officer-info">
+                            <p class="officer-name">Tadashi Ishikawa</p>
+                            <label class="officer-position">President</label>
                         </div>
                     </div>
                 </div>
@@ -97,57 +86,54 @@
             <!-- History -->
             <p class="header">HISTORY</p>
             <div id="history">
-                <div class="history">
-                    <div class="yr-title">
-                        <p class="col-4 yr">2017</p>
-                        <p>:</p>
-                        <p class="col-8 title">Company Establishment</p>
-                    </div>
-                    <div class="month-content">
-                        <p class="col-4 month">February 1</p>
-                        <p class="colon">:</p>
-                        <p class="col-8 history-content">Establishment of Advanced World Solutions U.S.A., Inc.</p>
-                    </div>
-                    <div class="month-content">
-                        <p class="col-4 month">August 1</p>
-                        <p class="colon">:</p>
-                        <p class="col-8 history-content">Company name change to Ubicom U.S.A., Inc.</p>
-                    </div>
-                    <br>
-                    <!-- 2018 -->
-                    <div class="yr-title">
-                        <p class="col-4 yr">2018</p>
-                        <p>:</p>
-                        <p class="col-8 title">Title</p>
-                    </div>
-                    <div class="month-content">
-                        <p class="col-4 month">Month</p>
-                        <p class="colon">:</p>
-                        <p class="col-8 history-content">Content</p>
-                    </div>
-                    <div class="month-content">
-                        <p class="col-4 month">Month</p>
-                        <p class="colon">:</p>
-                        <p class="col-8 history-content">Content</p>
-                    </div>
-                    <br>
-                    <!-- 2019 -->
-                    <div class="yr-title">
-                        <p class="col-4 yr">2019</p>
-                        <p>:</p>
-                        <p class="col-8 title">Title</p>
-                    </div>
-                    <div class="month-content">
-                        <p class="col-4 month">Month</p>
-                        <p class="colon">:</p>
-                        <p class="col-8 history-content">Content</p>
-                    </div>
-                    <div class="month-content">
-                        <p class="col-4 month">Month</p>
-                        <p class="colon">:</p>
-                        <p class="col-8 history-content">Content</p>
-                    </div>
-                    
+                <div class="yr-title">
+                    <p class="col-4 yr">2017</p>
+                    <p>:</p>
+                    <p class="col-8 history-title">Company Establishment</p>
+                </div>
+                <div class="month-content">
+                    <p class="col-4 month">February 1</p>
+                    <p class="colon">:</p>
+                    <p class="col-8 history-content">Establishment of Advanced World Solutions U.S.A., Inc.</p>
+                </div>
+                <div class="month-content">
+                    <p class="col-4 month">August 1</p>
+                    <p class="colon">:</p>
+                    <p class="col-8 history-content">Company name change to Ubicom U.S.A., Inc.</p>
+                </div>
+                <br>
+                <!-- 2018 -->
+                <div class="yr-title">
+                    <p class="col-4 yr">2018</p>
+                    <p>:</p>
+                    <p class="col-8 history-title">Title</p>
+                </div>
+                <div class="month-content">
+                    <p class="col-4 month">Month</p>
+                    <p class="colon">:</p>
+                    <p class="col-8 history-content">Event</p>
+                </div>
+                <div class="month-content">
+                    <p class="col-4 month">Month</p>
+                    <p class="colon">:</p>
+                    <p class="col-8 history-content">Event</p>
+                </div>
+                <br>
+                <!-- 2019 -->
+                <div class="yr-title">
+                    <p class="col-4 yr">2019</p>
+                    <p>:</p>
+                    <p class="col-8 history-title">Title</p>
+                </div>
+                <div class="month-content">
+                    <p class="col-4 month">Month</p>
+                    <p class="colon">:</p>
+                    <p class="col-8 history-content">Event</p>
+                </div>
+                <div class="month-content">
+                    <p class="col-4 month">Month</p>
+                    <p class="colon">:</p>
+                    <p class="col-8 history-content">Event</p>
                 </div>
             </div>
             
@@ -156,26 +142,25 @@
             <div id="presMsg">
                 <p class="header">MESSAGE OF THE PRESIDENT</p>
                 <div>
-                    <div class="quotation">
-                        <div class="pres-img col-3-lg col-2-sm">
-                            <img src="img/pres.png" alt="President">
+                    <div class="presMsg row">
+                        <div class="president col-lg-3 col-sm-4 col-12">
+                            <img class="pres-img" src="/img/Solutions/President Ishikawa-san.png" alt="Tadashi Ishikawa">
                             <p class="pres-name">Tadashi Ishikawa</p>
-                            <p style="text-align: center">President</p>
                         </div>
-                        <div class="text">
-                            <p class="quote col-9-xl">
-                                Continue to challenge the world with a bright and positive smile.
+                        <div class="col-lg-9 col-sm-8 col-12">
+                            <p class="quote">
+                                "Continue to challenge the world with a bright and positive smile."
                             </p>
-                            <p class="col-9-xl">
+                            <p>
                                 AWS (Advanced World Systems, Inc., the predecessor of Ubicom Group, was founded in 1993. and has built a solid business foundation based on our 25-year experience in R&D and IT personnel development in the Philippines.
                             </p>
-                            <p class="col-9-xl">
+                            <p>
                                 We see social structural changes such as internationalization, the declining birthrate and aging population, and social innovations such as technological innovation in the fields of medical life sciences and robots and AI as opportunities for creating new businesses. 
                             </p>
-                            <p class="col-12-xl">
+                            <p>
                                 In addition to the existing manufacturing and service industries, the group is working together to develop and provide unique solution services utilizing state-of-the-art technologies in the financial, medical, automotive and robotics fields.
                             </p>
-                            <p class="col-9-xl">
+                            <p>
                                 In the future, we will aim to further improve our corporate value by expanding our group through M&A and capital and business alliances and by promoting our unique investment Win・Win model that leverages the advantages ofour domestic competitors
                             </p>
                             <p>
@@ -184,21 +169,8 @@
                             <p>
                                 We will continue to create new markets as a company that brings together young and motivated people from Asian countries to bring together the most creative people in the industry and talk about their dreams.
                             </p>
-                            
                         </div>
                     </div>
-                    <!-- <p>
-                        In addition to the existing manufacturing and service industries, the group is working together to develop and provide unique solution services utilizing state-of-the-art technologies in the financial, medical, automotive and robotics fields.
-                    </p>
-                    <p>
-                        In the future, we will aim to further improve our corporate value by expanding our group through M&A and capital and business alliances and by promoting our unique investment Win・Win model that leverages the advantages ofour domestic competitors
-                    </p>
-                    <p>
-                        Finally, the group's strength is to position its employees and their families, including overseas, as "friends", and by keeping everyone smiling and always cheerful and positive, each person is ahead of the times with ownership without being satisfied with the current situation. It is a corporate group that makes leaps and bounds.
-                    </p>
-                    <p>
-                        We will continue to create new markets as a company that brings together young and motivated people from Asian countries to bring together the most creative people in the industry and talk about their dreams.
-                    </p> -->
                 </div>
             </div>
             
@@ -256,17 +228,19 @@
                 </div>
                 <!-- Beijing -->
                 <div>
-                    <p class="com-name">Beijing Fumori Technology Co., Ltd. (AWS (Beijing), Ltd.)</p>
+                    <p class="com-name">Beijing Iveson Technology Co., Ltd. (AWS (Beijing), Ltd.)</p>
                     <div>
-                        <p class="address">Office 559, 5F, South Block, Raycom Info Tech Park, No.2 Kexueyuan South Road, Zhongguancun, Beijing 100190, China </p>
+                        <p class="ofc">Beijing Office</p>
+                        <p class="address">Rm.559, 5F, South Block, Raycom Info Tech Park, No.2 Kexueyuan South Road, Zhongguancun, Beijing, China </p>
                         <p class="tel">TEL + 86-10-5982-2174</p>
                     </div>
                 </div>
                 <!-- Kunshan -->
                 <div>
-                    <p class="com-name">Beijing Liao Forest Technology Co., Ltd. Kunshan Division (AWS (Kunshan), Ltd.)</p>
+                    <p class="com-name">Beijing Iveson Technology Co., Ltd. Kunshan Branch (AWS (Kunshan), Ltd.)</p>
                     <div>
-                        <p class="address">Rm 901, 9F, MP Modern Plaza, No.8, Weiye Road. Kunshan City. Jiangsu Preferecture, China </p>
+                        <p class="ofc">Kunshan Office</p>
+                        <p class="address">Rm.901, 9F, MP Modern Plaza, No.8, Weiye Road. Kunshan City. Jiangsu Preferecture, China </p>
                         <p class="tel">TEL + 86-512-5033-1032</p>
                     </div>
                 </div>
@@ -317,10 +291,6 @@
                 <!-- Ubicom USA -->
                 <div>
                     <p class="com-name">Ubicom U.S.A., Inc.</p>
-                    <!-- <div class="website">
-                        <p>Website</p>
-                        <p><a href="http://www.awsys-i.com/"> http://wwww.awsys-i.com</a></p>
-                    </div> -->
                     <div>
                         <p class="ofc">New York - Head Office</p>
                         <p class="address">27-01 Queens Plaza, North Long Island City 11101, New York</p>

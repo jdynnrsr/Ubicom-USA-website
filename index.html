@@ -11,40 +11,196 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://kit.fontawesome.com/40ac460209.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="./main.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light sticky-top">
-        <div class="container-fluid">
-            <a href="index.html">
-                <img src="img/Ubicom USA logo.png" class="navbar-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a href="index.html" class="nav-link">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Services.html" class="nav-link">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Company.html" class="nav-link">COMPANY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Contact.html" class="nav-link">CONTACT</a>
-                    </li>
-                </ul>
+    <div id="container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container-fluid">
+                <div class="navbar-logo">
+                    <a href="index.html ">
+                        <img src="img/Ubicom USA logo.png" alt="Ubicom USA Logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Solutions.html" class="nav-link">SOLUTIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Company.html" class="nav-link">COMPANY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Contact.html" class="nav-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Image with Video -->
+        <div id="Home">
+            <div class="hero-image">
+                <div class="hero-video embed-responsive embed-responsive-16by9 col-xl-8">
+                        <!-- <video controls autoplay muted loop class="embed-responsive-item" id="heroVideo"> -->
+                        <video controls muted loop class="embed-responsive-item" id="heroVideo">
+                        <source src="./img/Ubicom Holdings, Inc. video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <p class="company-dsc">
+                Let us help you navigate and thrive in the increasingly changing world of technology through strategic consulting, operational leadership, focus on excellence, and the co-creation of strategic breakthrough solutions.
+            </p>
+            <p>
+                Under the slogan of "Go Global", in the United States, which has the world's largest IT software services market, we have established 2 subsidiaries in 2017, focusing mainly on automobile manufacturers, Tier１ suppliers and other automotive industries, medical big data analysis and health care related to BPO, and the manufacturing industry. We will accelerate the global expansion of our unique solution services using advanced technologies, such as RPA (Robotic Process Automation) / Automation, Analytics, A.I (Artificial Intelligence).
+            </p>
+
+            <hr>
+
+            <p class="header">SOLUTIONS</p>
+            <div class="row solutions">
+                <div class="col-md-6 left text-center">
+                    <a href="Solutions.html"><i class="fas fa-stethoscope"></i></a>
+                    <p class="title">Analytics for Healthcare</p>
+                    <P class="sol-summary">
+                        Solutions provider for top medical and pharmaceutical companies around the world.
+                    </P>
+                </div>
+                
+                <div class="col-md-6 right text-center">
+                    <a href="Solutions.html"><i class="fas fa-car"></i></a>
+                    <p class="title">Automation for Automotive</p>
+                    <P class="sol-summary">
+                        Smart, connected devices allow for stronger customer connection, insight, and new revenue streams.
+                    </P>
+                </div>
+            </div>
+            
+            <hr>
+
+            <p class="header">SERVICES</p>
+            <div class="row solutions">
+                <div class="col-md-6 left text-center">
+                    <a href="Solutions.html"><i class="fas fa-desktop"></i></a>
+                    <p class="title">Software Development</p>
+                    <P class="sol-summary">
+                         Create cutting-edge business applications designed to attain your business objectives for exponential growth.
+                    </P>
+                </div>
+                
+                <div class="col-md-6 right text-center">
+                    <a href="Solutions.html"><i class="fa fa-check-square-o"></i></a>
+                    <p class="title">Software Testing</p>
+                    <P class="sol-summary">
+                        Leave quality to the experts, with ISO and ISTQB grounded practices and an all-certified team of engineers.
+                    </P>
+                </div>
+            </div>
+            
+            <hr>
+
+            <div class="row">
+                <div id="contact" class="col-md-6 left">
+                        <p class="header">CONTACT US</p>
+                    <form action="https://formspree.io/jar16r10@gmail.com" method="POST">
+                        <label>
+                            NAME *
+                            <div class="name">
+                                <input type="text" name="First Name" class="fname col-6" placeholder="First Name">
+                                <input type="text" name="Last Name" class="lname col-6" placeholder="Last Name">
+                            </div>
+                            <div class="error_name">
+                            </div>
+                        </label>
+                        <label>
+                            ORGANIZATION
+                            <input type="text" name="Organization" class="organization">
+                            <div class="error_org">
+                            </div>
+                        </label>
+                        <label>
+                            E-MAIL ADDRESS *
+                            <input type="email" name="Email Address" class="email">
+                            <div class="error_email">   
+                            </div>
+                        </label>
+                        <label>
+                            CONTACT NUMBER *
+                            <input type="number" name="Contact Number" class="contactno">
+                            <div class="error_contactno">
+                            </div>
+                        </label>
+                        <label>
+                            MESSAGE *
+                            <textarea name="Message" class="message"></textarea>
+                            <div class="error_msg">
+                            </div>
+                            <p class="required">* Required</p>
+                        </label>
+                        <button type="submit" class="btn btn-md submit">
+                            SEND MESSAGE
+                        </button>
+                    </form>
+                </div>
+                
+                <hr class="hr">
+
+                <div id="location" class="col-md-6 right">
+                    <p class="header">LOCATION</p>
+                    <p class="company-name">
+                        Ubicom U.S.A., Inc.
+                    </p>
+                    <div class="add-no">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            27-01 Queens Plaza, North Long Island City 11101, New York
+                        </p>
+                        <p>
+                            <i class="fas fa-phone-alt"></i>
+                            (760) 123-4567
+                        </p>
+                    </div>
+                    <div id="map-container-google-2" class="z-depth-1-half map-container">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5094308893085!2d-73.94093218459388!3d40.75081887932769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258d502dee1dd%3A0x17590ee3a9176708!2s27-01+Queens+Plaza+N%2C+Long+Island+City%2C+NY+11101%2C+USA!5e0!3m2!1sen!2sph!4v1564046382245!5m2!1sen!2sph" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    
-    <!-- Hero Image with Video -->
-    <div id="heroImage">
-        <div class="hero-video">
-            <video src="./img/Ubicom Holdings, Inc. video.mp4" class="autoplay muted loop" id="heroVideo"></video>
+        
+        
+        
+        
+        
+        <div id="footer">
+            <div class="container-fluid footer-label">
+                <div class="company-info">
+                    <label>
+                        <label>27-01 Queens Plaza North Long Island City 11101, New York</label>
+                        <label>|</label>
+                        <label>(760) 123 - 4567</label>
+                    </label>
+                </div>
+                <div class="footer-item">
+                    <label>
+                        <a href="Contact.html" class="footer-link">Contact Us</a>
+                        <a href="#" class="footer-link">|</a>
+                        <a href="Information-Security.html" class="footer-link">Information Security Policy</a>
+                        <a href="#" class="footer-link">|</a>
+                        <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
+                    </label>
+                </div>           
+                <div class=company-name>
+                    <label>Copyright 2019. Ubicom U.S.A., Inc.</label>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -53,27 +209,4 @@
     
     
 </body>
-<footer>
-    <div class="container-fluid footer-label">
-        <div class="company-info">
-            <label>
-                <label>27-01 Queens Plaza North Long Island City 11101, New York</label>
-                <label>|</label>
-                <label>(760) 123 - 4567</label>
-            </label>
-        </div>
-        <div class="footer-item">
-            <label>
-                <a href="Contact.html" class="footer-link">Contact Us</a>
-                <a href="#" class="footer-link">|</a>
-                <a href="Information-Security.html" class="footer-link">Information Security Policy</a>
-                <a href="#" class="footer-link">|</a>
-                <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
-            </label>
-        </div>        
-        <div class=company-name>
-            <label>Copyright 2019. Ubicom U.S.A., Inc.</label>
-        </div>
-    </div>
-</footer>
 </html>

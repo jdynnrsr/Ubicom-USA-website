@@ -11,62 +11,130 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://kit.fontawesome.com/40ac460209.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="./main.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light sticky-top">
-        <div class="container-fluid">
-            <a href="#">
-                <img src="img/Ubicom USA logo.png" class="navbar-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a href="index.html" class="nav-link">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Services.html" class="nav-link">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Company.html" class="nav-link">COMPANY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Contact.html" class="nav-link">CONTACT</a>
-                    </li>
-                </ul>
+    <div id="container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container-fluid">
+                <div class="navbar-logo">
+                    <a href="index.html ">
+                        <img src="img/Ubicom USA logo.png" alt="Ubicom USA Logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Solutions.html" class="nav-link">SOLUTIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Company.html" class="nav-link">COMPANY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Contact.html" class="nav-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <p class="previous-page">
+            <a href="index.html"><i class="fas fa-home"></i></a>
+            <label>|</label>
+            <label>Contact</label>
+        </p>
+        
+        <!-- CONTENT -->
+        <p class="header">CONTACT US</p>
+        <div id="Contact" class="col-xl-8 col-lg-9 col-md-8 mx-auto">
+            <p class="contact-label">Email us with any questions or inquiries. We should be happy to answer your questions and set up a meeting with you.</p>
+
+            <form action="https://formspree.io/jar16r10@gmail.com" method="POST">
+                <label>
+                    NAME *
+                    <div class="name">
+                        <input type="text" name="First Name" class="fname col-6" placeholder="First Name">
+                        <input type="text" name="Last Name" class="lname col-6" placeholder="Last Name">
+                    </div>
+                    <div class="error_name">
+                    </div>
+                </label>
+                <label>
+                    ORGANIZATION
+                    <input type="text" name="Organization" class="organization">
+                    <div class="error_org">
+                    </div>
+                </label>
+                <label>
+                    E-MAIL ADDRESS *
+                    <input type="email" name="Email Address" class="email">
+                    <div class="error_email">   
+                    </div>
+                </label>
+                <label>
+                    CONTACT NUMBER *
+                    <input type="number" name="Contact Number" class="contactno">
+                    <div class="error_contactno">
+                    </div>
+                </label>
+                <label>
+                    MESSAGE *
+                    <textarea name="Message" class="message"></textarea>
+                    <div class="error_msg">
+                    </div>
+                    <p class="required">* Required</p>
+                </label>
+                <button type="submit" class="btn btn-md submit">
+                    SEND MESSAGE
+                </button>
+            </form>
+
+        </div>
+        
+
+
+
+
+
+
+
+
+        <div id="footer">
+            <div class="container-fluid footer-label">
+                <div class="company-info">
+                    <label>
+                        <label>27-01 Queens Plaza North Long Island City 11101, New York</label>
+                        <label>|</label>
+                        <label>(760) 123 - 4567</label>
+                    </label>
+                </div>
+                <div class="footer-item">
+                    <label>
+                        <a href="Contact.html" class="footer-link">Contact Us</a>
+                        <a href="#" class="footer-link">|</a>
+                        <a href="Information-Security.html" class="footer-link">Information Security Policy</a>
+                        <a href="#" class="footer-link">|</a>
+                        <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
+                    </label>
+                </div>           
+                <div class=company-name>
+                    <label>Copyright 2019. Ubicom U.S.A., Inc.</label>
+                </div>
             </div>
         </div>
-    </nav> 
-    <h1>CONTACT</h1>    
+    </div>
 </body>
 
 
 
 
-<footer>
-    <div class="container-fluid footer-label">
-        <div class="company-info">
-            <label>
-                <label>27-01 Queens Plaza North Long Island City 11101, New York</label>
-                <label>|</label>
-                <label>(760) 123 - 4567</label>
-            </label>
-        </div>
-        <div class="footer-item">
-            <label>
-                <a href="Contact.html" class="footer-link">Contact Us</a>
-                <a href="#" class="footer-link">|</a>
-                <a href="Information-Security.html" class="footer-link">Information Security Policy</a>
-                <a href="#" class="footer-link">|</a>
-                <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
-            </label>
-        </div>      
-        <div class=company-name>
-            <label>Copyright 2019. Ubicom U.S.A., Inc.</label>
-        </div>
-    </div>
-</footer>
+
 </html>

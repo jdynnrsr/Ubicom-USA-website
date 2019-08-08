@@ -1,0 +1,200 @@
+
+#Home {
+    margin-right: 12% !important;
+    margin-left: 12% !important;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+#Home hr, .hr {
+    margin-top: 7% !important;
+    margin-bottom: 7% !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.35);
+}
+.hero-image{
+    margin-top: 5%;
+    background-image: url("./img/Home/Home\ Banner.png");
+    /* width: 90%; */
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex !important;
+    align-content: left;
+    justify-content: center !important;
+    flex-direction: column;
+    padding-left: 5%;
+}
+.hero-video{
+    width: 100% !important;
+    flex: unset !important;
+}
+
+video{
+    width: 100% !important;
+}
+.company-dsc {
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+.title {
+    color: #00A8FB;
+    font-weight: 500;
+    font-size: 150%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.solutions i {
+    font-size: 600%;
+    color: #414141;
+}
+.left {
+    padding-left: 0% !important;
+    padding-right: 4% !important;
+}
+.right {
+    padding-left: 4% !important;
+    padding-right: 0% !important;
+}
+.sol-summary {
+    text-align: justify !important;
+}
+#contact {
+    margin-bottom: 5rem;
+}
+#contact label {
+    margin-bottom: 2%;
+    font-size: 90%;
+    font-weight: 500;
+    display: block !important;
+}
+#contact ::placeholder{
+    font-style: italic;
+}
+#contact .name {
+    display: -webkit-box;
+    padding-right: 2%;
+}
+#contact .fname {
+    margin-right: 2%;
+}
+#contact input {
+    display: block;
+    font-weight: normal !important;
+    padding-left: 2%;
+    width: 100%;
+    font-size: 85%;
+    margin-top: 1% !important;
+    /* height: 2.5rem; */
+}
+#contact textarea {
+    display: block;
+    font-weight: normal !important;
+    padding-left: 2%;
+    width: 100%;
+    font-size: 85%;
+    height: 15rem;
+}
+#contact form p {
+    font-size: 70%;
+    color: rgb(182, 0, 0);
+    margin-bottom: unset;
+}
+#contact .required {
+    color:  #3E3E3E !important;
+    font-size: 70%;
+    font-style: italic;
+}
+
+#contact button {
+    color: white;
+    font-weight: 500;
+    background: #FF333B;
+    font-size: 100%;
+    border-radius: 0% !important;
+    float: right !important;
+
+}
+
+.company-name {
+    font-size: 150%;
+    font-weight: 500;
+}
+#location i{
+    color: #00A8FB;
+    font-size: larger;
+}
+.map {
+    height: 300px !important;
+    width: 95% !important;
+}
+
+
+
+/* ---Media Queries---*/
+@media (max-width: 1200px) {
+    #Home {
+        font-size: 1rem;
+    }
+    .hero-image{
+        margin-top: 5%;
+        background-image: url("./img/Home/Home\ Banner.png");
+        /* width: 90%; */
+        height: 50%;
+        padding-left: 0%;
+    }
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+    #Home {
+        font-size: .9rem;
+    }
+    .left {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+    .right {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+    .company-name {
+        text-align: center;
+    }
+    .map {
+        height: 250px !important;
+        width: 100% !important;
+    }
+}
+@media (max-width: 596px) {
+    #Home {
+        font-size: .8rem;
+    }
+}
+@media (max-width: 526px) {
+}
+@media (max-width: 383px) {
+    #Home {
+        font-size: .7rem;
+    }
+}
+@media (max-width: 337px) {
+}
+
+/*========== BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default on Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200 px) { ... }
+
+=============*/
