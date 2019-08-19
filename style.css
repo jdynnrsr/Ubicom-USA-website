@@ -110,6 +110,7 @@ nav.navbar {
     justify-content: center;
     flex-direction: column;
     font-size: 1.25rem;
+    margin-top: 10%;
 }
 .footer-contactUs {
     width: 100%;
