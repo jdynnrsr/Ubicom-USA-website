@@ -1,8 +1,6 @@
 
 #Home {
-    margin-right: 12% !important;
-    margin-left: 12% !important;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-align: justify;
 }
 #Home hr, .hr {
@@ -10,11 +8,15 @@
     margin-bottom: 7% !important;
     border-top: 1px solid rgba(0, 0, 0, 0.35);
 }
-.hero-image{
-    margin-top: 5%;
+.container-padding {
+    padding: 5% 8%;
+}
+.jumbotron {
+    padding: unset !important;
+    margin: unset !important;
+}
+.header-banner{
     background-image: url("./img/Home/Home\ Banner.png");
-    /* width: 90%; */
-    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,118 +24,110 @@
     align-content: left;
     justify-content: center !important;
     flex-direction: column;
-    padding-left: 5%;
 }
-.hero-video{
+.banner-caption {
+    margin-bottom: 0% !important;
+    text-align: left;
+    padding:12% 8%;
+    width: 50%;
+    color: white;
+}
+.about {
+    display: block;
+    text-align: center;
+}
+.about .button {
+    background: #0E83CE !important;
+    color: #fff !important;
+    border-radius: 0% !important;
+    font-weight: 400 !important;
+    padding: 1rem;
+    margin-top: 4%;
+}
+/* .hero-video{
     width: 100% !important;
     flex: unset !important;
 }
 
 video{
     width: 100% !important;
+} */
+
+.solutions {
+    text-align: center !important;
+    color: white;
 }
-.company-dsc {
-    margin-top: 4%;
-    margin-bottom: 3%;
-}
-.title {
-    color: #00A8FB;
-    font-weight: 500;
-    font-size: 150%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+.solutions .card {
+    justify-content: center !important;
+    padding: 4% 4%;
+    background-image: url("img/theme\ color.png");
+    background-position: center;
+    width: 100%;
+    margin-bottom: 5%;
 }
 .solutions i {
-    font-size: 600%;
-    color: #414141;
-}
-.left {
-    padding-left: 0% !important;
-    padding-right: 4% !important;
-}
-.right {
-    padding-left: 4% !important;
-    padding-right: 0% !important;
-}
-.sol-summary {
-    text-align: justify !important;
-}
-#contact {
-    margin-bottom: 5rem;
-}
-#contact label {
     margin-bottom: 2%;
-    font-size: 90%;
-    font-weight: 500;
-    display: block !important;
+    font-size: 300%;
 }
-#contact ::placeholder{
-    font-style: italic;
-}
-#contact .name {
-    display: -webkit-box;
-    padding-right: 2%;
-}
-#contact .fname {
-    margin-right: 2%;
-}
-#contact input {
-    display: block;
-    font-weight: normal !important;
-    padding-left: 2%;
-    width: 100%;
-    font-size: 85%;
-    margin-top: 1% !important;
-    /* height: 2.5rem; */
-}
-#contact textarea {
-    display: block;
-    font-weight: normal !important;
-    padding-left: 2%;
-    width: 100%;
-    font-size: 85%;
-    height: 15rem;
-}
-#contact form p {
-    font-size: 70%;
-    color: rgb(182, 0, 0);
-    margin-bottom: unset;
-}
-#contact .required {
-    color:  #3E3E3E !important;
-    font-size: 70%;
-    font-style: italic;
-}
-
-#contact button {
-    color: white;
-    font-weight: 500;
-    background: #FF333B;
-    font-size: 100%;
+.solutions .button {
     border-radius: 0% !important;
-    float: right !important;
-
 }
 
-.company-name {
-    font-size: 150%;
+.bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/theme\ color.png");
+}
+.h-services {
+    color: white !important;
+}
+.h-services .header {
+    color: white !important;
+}
+.h-services i {
+    margin-bottom: 2%;
+    font-size: 300%;
+}
+.h-services .row div{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.h-services .btn-link {
+    font-size: 110%;
     font-weight: 500;
 }
-#location i{
-    color: #00A8FB;
-    font-size: larger;
+/* .h-services .col-lg-4:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: none;
+    width: 1px;
 }
-.map {
-    height: 300px !important;
-    width: 95% !important;
+.h-services .col-lg-4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #ffffff;
+    width: 1px;
+} */
+/* .h-services .col {
+    border-right: solid;
 }
+.h-services .col :last-child {
+    border-right: 0px
+} */
 
 
 
 /* ---Media Queries---*/
 @media (max-width: 1200px) {
     #Home {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .hero-image{
         margin-top: 5%;
@@ -144,18 +138,13 @@ video{
     }
 }
 @media (max-width: 992px) {
+    #Home {
+        font-size: 1.25rem;
+    }
 }
 @media (max-width: 768px) {
     #Home {
-        font-size: .9rem;
-    }
-    .left {
-        padding-left: 10% !important;
-        padding-right: 10% !important;
-    }
-    .right {
-        padding-left: 10% !important;
-        padding-right: 10% !important;
+        font-size: 1rem;
     }
     .company-name {
         text-align: center;
@@ -166,16 +155,10 @@ video{
     }
 }
 @media (max-width: 596px) {
-    #Home {
-        font-size: .8rem;
-    }
 }
 @media (max-width: 526px) {
 }
 @media (max-width: 383px) {
-    #Home {
-        font-size: .7rem;
-    }
 }
 @media (max-width: 337px) {
 }
