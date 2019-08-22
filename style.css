@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,900&display=swap');
 @import url('footer-link.css');
 @import url('company.css');
-@import url('solutions.css');
-@import url('contact.css');
-@import url('home.css');
 
 
 html {
@@ -11,31 +8,30 @@ html {
     width: 100%;
 }
 body{
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto' !important;
     color: #3E3E3E;
     height: 100%;
     width: 100%;
     overflow-y: auto;
     font-size: 1.5rem !important;
+    line-height: 1.75 !important;
 }
 a {
-    color: unset !important;
+    color: inherit !important;
 }
-#container {
+#container-fluid {
    min-height:100%;
    position:relative !important;
-   padding-bottom: 15%;
+   padding-bottom: 10rem;
 }
 
 
 /*---NAVBAR---*/
 nav.navbar {
     background-color: #fff;
-    padding-top: .5rem !important;
-    padding-left: unset !important;
-    padding-right: unset !important;
+    padding: 0 5%;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
-    height: 6rem;
+    height: auto;
 }
 /* .container-fluid {
     margin-top: .5% !important;
@@ -43,29 +39,34 @@ nav.navbar {
 .navbar-content {
     width: 100%;
 }
-.navbar-logo {
-    padding-left: 7% !important;
-}
-.navbar-logo img{
+/* .navbar-logo {
+    padding-left: 5% !important;
+} */
+.navbar-brand img{
     height: 5rem;
+    margin: 3% 0 !important;
 }
-#navbarResponsive {
-    padding-right: 7% !important;
+.navbar button {
+    border: none !important;
+    background-color: none !important;
+    font-size: 2.5rem;
+    color: #025391 !important;
+    z-index: 10;
+
 }
 .navbar-toggler {
-    margin-right: 7% !important;
-    padding: .5% 1% !important;
+    padding: 2% 1% !important;
 }
 #navbarResponsive .nav-item {
     font-size:110%;
-    font-weight: bolder;
+    font-weight: 500;
     padding-left: 8%;
 }
 #navbarResponsive .nav-link:hover {
     color: #00A8FB !important;
 }
 #navbarResponsive .button{
-    font-size:90%;
+    font-size:110%;
     background: #0E83CE !important;
     color: #fff !important;
     border-radius: 0% !important;
@@ -73,8 +74,34 @@ nav.navbar {
     padding: 1rem;
     text-align: right;
     margin-left: 4%;
-
 }
+.dropdown-menu {
+    border: none !important;
+}
+.dropdown-menu .subpage {
+    padding-left: 2.5rem !important;
+}
+.dropdown-item {
+    font-weight: 500;
+}
+.dropdown-item:hover {
+    color: white !important;
+    background-color: #00A8FB !important;
+}
+
+.header-banner{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex !important;
+    align-content: left;
+    justify-content: center !important;
+    flex-direction: column;
+    height: 18rem;
+}
+
+
+
 .previous-page {
     font-size: 1rem;
     margin-top: 2%;
@@ -91,7 +118,7 @@ nav.navbar {
     color: #146DD2;
     font-weight: 500 !important;
     text-align: center;
-    font-size: 200%;
+    /* font-size: 150% !important; */
     margin-bottom: 4% !important;
 }
 .row {
@@ -101,30 +128,89 @@ nav.navbar {
 /*---FOOTER----*/
 #footer {
     font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
     position: absolute;
     color: #3E3E3E;
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     display: flex !important;
     justify-content: center;
     flex-direction: column;
-    font-size: 1.25rem;
-    margin-top: 10%;
+    line-height: unset;
+    /* font-size: 90%; */
 }
 .footer-contactUs {
     width: 100%;
     background: #0E83CE;
-    text-align: center;
     color: rgb(255, 255, 255) !important;
     padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .footer-contactUs .btn {
+    margin-left: 2%;
     border-radius: 0% !important;
     border: solid;
     font-weight: bold;
 }
-#footer address {
+.footer {
+    padding: 1.1rem 3%;
+}
+.footer label {
+    margin-bottom: -2rem;
+}
+.footer-l1 {
+    display: flex;
+    justify-content: space-between !important;
+}
+.footer-c1 {
+    padding: 0 0 !important;
+}
+.footer-logo {
+    height: 4rem;
+}
+.footer-c2 {
+    padding: 0 0 !important;
+}
+.footer-nav {
+    display: inline-flex;
+    text-align: center !important;
+    font-weight: 400;
+}
+.footer-nav .nav-link {
+    text-align: center;
+    font-size: 90%;
+}
+.footer-nav .nav-link:first-child {
+    padding-left: 0 !important;
+}
+.footer-nav .nav-link:last-child {
+    padding-right: 0 !important;
+}
+.social-media {
+    display: inline-flex;
+    padding: 0 0 !important;
+}
+.social-media i {
+    color: #0E83CE;
+    font-size: 2rem;
+}
+.footer-last p{
+    margin-bottom: 0 !important;
+}
+.footer-l2 {
+    display: flex;
+    margin-top: 1%;
+    font-size: 80% !important;
+    justify-content: space-between !important;
+}
+.footer-l2-mid {
+    padding: 0 0 !important;
+}
+.footer-last {
+    padding: 0 0 !important;
+}
+/* #footer address {
     margin-top: 1rem;
     margin-bottom: 0 !important;
     line-height: 1.5 !important;
@@ -133,20 +219,9 @@ nav.navbar {
     padding-top: 1%;
     padding-left: 5% !important;
     padding-right: 5% !important;
-}
-.links {
-    float: right;
-    text-align: right;
-    margin-bottom: 0!important;
-}
-.footer-nav {
-    margin-bottom: 1.5rem !important;
-    font-size: 120%;
-    font-weight: 400;
-}
-.footer-link {
-    margin-right: .25rem;
-}
+} 
+
+*/
 
 
 
@@ -158,135 +233,137 @@ nav.navbar {
 
 /* ---Media Queries---*/
 
-@media (max-width: 1200px) {
-    .navbar-logo img{
-        height: 5rem;
+@media (max-width: 1217px) {
+    .navbar-brand img{
+        height: 4.5rem;
+        margin: 2% 0 !important;
     }
-    .previous-page {
-        font-size: small;
+    nav.navbar {
+        padding: 0 3%;
     }
-    .header {
-        font-size: 3rem !important;
-    }
-    #footer {
-        height: 90px;
-        line-height: 130%;
-    }
-    div.footer-label {
+    #navbarResponsive .nav-item {
+        font-size:100%;
+        padding-left: 6%;
+    }     
+}
+@media (max-width: 1199px){
+    .footer-l1 {
+        display: block !important;
         text-align: center;
     }
-    .footer-item {
+    .footer-l2 {
+        display: block !important;
         text-align: center;
+        font-size: 90%;
     }
-   
 }
 @media (max-width: 1100px) {
-    .navbar-logo img{
-        height: 4.5rem;
+    nav.navbar {
+        padding: 0 2%;
     }
-    .previous-page {
-        font-size: small;
-    }
-    .header {
-        font-size: 2.5rem !important;
-    }
-    #footer {
-        height: 90px;
-        line-height: 130%;
-    }
-    div.footer-label {
-        text-align: center;
-    }
-    .footer-item {
-        text-align: center;
-    }
-    
+    #navbarResponsive .nav-item {
+        font-size:100%;
+        padding-left: 4%;
+    } 
 }
 
-@media (max-width: 992px) {
-    #container {
-       padding-bottom: 20% !important;
+@media (max-width: 991px) {
+    body{
+        font-size: 1.25rem !important;
     }
-    nav.navbar{
-        height: 4.5rem;
+    h1 {font-size: 2.25rem !important;}
+    /* h2 {font-size: 1.75rem !important;}
+    h3 {font-size: 1.5rem !important;}
+    h4 {font-size: 1.25rem !important;}
+    h5 {font-size: 1rem !important;}
+    h6 {font-size: .75rem !important;} */
+    nav.navbar {
+        padding: 0 5%;
     }
-    .navbar-logo img{
-        height: 3.5rem;
+    .navbar-brand img{
+        height: 4rem;
+        margin: 2% 0 !important;
     }
     #navbarResponsive {
-        background-color: #fff;
+        background-color: white;
+        width: 100%;
     }
-    .nav-item {
-        font-size: large;
-        text-align: right;
+    .footer-logo {
+        height: 3.75rem;
     }
-    #footer {
-        height: 80px;
-    }
-    .footer-label div{
-        font-size: smaller;
-    }
-    #container {
-    min-height:100%;
-    position:relative !important;
-    padding-bottom: 15%;
-    }
+    .social-media i {
+        font-size: 1.75rem;
+    } 
 }
 @media (max-width: 768px) {
-    nav.navbar{
-        height: 4rem;
-    }
-    .navbar-logo img{
-        height: 3rem;
-    }
-    .header {
-        font-size: 2rem !important;
-    }
-    #footer {
-        height: 70px;
+
+}
+@media (max-width: 589px) {
+    .footer-nav .nav-link {
+        text-align: center;
+        font-size: 90%;
+        padding: .25rem .5rem
     }
 }
-@media (max-width: 596px) {
-    nav.navbar{
+@media (max-width: 538px) {
+    body{
+        font-size: 1rem !important;
+    }
+    .btn-lg {
+        padding: 2% !important;
+        font-size: 1rem !important
+    }
+    h1 {font-size: 2.1rem !important;}
+    h2 {font-size: 1.9rem !important;}
+    h3 {font-size: 1.8rem !important;}
+    h4 {font-size: 1.6rem !important;}
+    h5 {font-size: 1.4rem !important;}
+    h6 {font-size: 1.2rem !important;}
+    
+    .footer-contactUs {
+        display: block;
+        text-align: center;
+    }
+    .footer-logo {
         height: 3.5rem;
     }
-    .navbar-logo img{
-        height: 2.5rem;
+    .social-media i {
+        font-size: 1.5rem;
     }
-    .header {
-        font-size: 1.5rem !important;
+    .footer-nav {
+        display: inherit;
     }
-}
-@media (max-width: 526px) {
-    #footer {
-        line-height: 100%;
-        height: 60px;
-    }
-    .footer-label div{
-        font-size: x-small;
+    .footer-nav .nav-link {
+        font-size: 100%;
+        padding: .1rem .5rem
     }
 }
-@media (max-width: 383px) {
-    nav.navbar{
-        height: 3.25rem;
-    }
-    .navbar-logo img{
-        height: 2.25rem;
-    }
-    .footer-label div{
-        font-size: xx-small;
-    }
-    #footer {
-        line-height: .7rem;
-        height: 50px;
+@media (max-width: 470px) {
+    .navbar-brand img{
+        height: 3.5rem;
+        margin: 2% 0 !important;
     }
 }
-@media (max-width: 337px) {
-    #footer {
-        line-height: .6rem;
-        height: 50px;
-    }
+@media (max-width: 441px) {
 }
+@media (max-width: 348px) {
+    .btn-lg {font-size: .75rem !important}
+    h1 {font-size: 1.8rem !important;}
+    h2 {font-size: 1.7rem !important;}
+    h3 {font-size: 1.5rem !important;}
+    h4 {font-size: 1.3rem !important;}
+    h5 {font-size: 1.2rem !important;}
+    h6 {font-size: 1rem !important;}
+}
+
+/* 
+h1 2.5rem
+h2 2
+h3 1.75
+h4 1.5
+h5 1.25
+h6 1
+*/
 
 /*========== BOOTSTRAP BREAK POINTS:
 

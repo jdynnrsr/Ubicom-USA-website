@@ -1,21 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,900&display=swap');
+@import url('style.css');
 
-#Home {
-    font-size: 1.75rem;
-    text-align: justify;
-}
-#Home hr, .hr {
-    margin-top: 7% !important;
-    margin-bottom: 7% !important;
-    border-top: 1px solid rgba(0, 0, 0, 0.35);
-}
+
 .container-padding {
     padding: 5% 8%;
 }
 .jumbotron {
     padding: unset !important;
     margin: unset !important;
+    background-color: rgba(0, 157, 255, 0.247) !important;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/theme\ color.png"); */
+
 }
-.header-banner{
+.home-banner{
     background-image: url("./img/Home/Home\ Banner.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@
     justify-content: center !important;
     flex-direction: column;
 }
-.banner-caption {
+.home-caption {
     margin-bottom: 0% !important;
     text-align: left;
     padding:12% 8%;
@@ -41,7 +41,7 @@
     color: #fff !important;
     border-radius: 0% !important;
     font-weight: 400 !important;
-    padding: 1rem;
+    padding: 2%;
     margin-top: 4%;
 }
 /* .hero-video{
@@ -63,11 +63,10 @@ video{
     background-image: url("img/theme\ color.png");
     background-position: center;
     width: 100%;
-    margin-bottom: 5%;
 }
 .solutions i {
     margin-bottom: 2%;
-    font-size: 300%;
+    font-size: 450%;
 }
 .solutions .button {
     border-radius: 0% !important;
@@ -87,13 +86,14 @@ video{
 }
 .h-services i {
     margin-bottom: 2%;
-    font-size: 300%;
+    font-size: 500%;
 }
 .h-services .row div{
     padding-left: 4%;
     padding-right: 4%;
 }
 .h-services .btn-link {
+    color: white !important;
     font-size: 110%;
     font-weight: 500;
 }
@@ -125,38 +125,26 @@ video{
 
 
 /* ---Media Queries---*/
-@media (max-width: 1200px) {
-    #Home {
-        font-size: 1.5rem;
-    }
-    .hero-image{
-        margin-top: 5%;
-        background-image: url("./img/Home/Home\ Banner.png");
-        /* width: 90%; */
-        height: 50%;
-        padding-left: 0%;
+@media (max-width: 1199px) {
+    .container-padding {
+        padding: 5% 6%;
     }
 }
 @media (max-width: 992px) {
-    #Home {
-        font-size: 1.25rem;
-    }
+    
 }
 @media (max-width: 768px) {
-    #Home {
-        font-size: 1rem;
-    }
-    .company-name {
-        text-align: center;
-    }
-    .map {
-        height: 250px !important;
-        width: 100% !important;
-    }
+   
 }
 @media (max-width: 596px) {
 }
-@media (max-width: 526px) {
+@media (max-width: 575px) {
+    .solutions .card {
+        display: block;
+        text-align: center !important;
+        width: 100%;
+        margin-bottom: 5%;
+    }
 }
 @media (max-width: 383px) {
 }

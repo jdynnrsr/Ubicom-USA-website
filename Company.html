@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ubicom U.S.A., Inc.</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="company.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -15,47 +15,71 @@
     <script src="./main.js"></script>
 </head>
 <body>
-    <div id="container">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div id="container-fluid">
+<!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <div class="navbar-logo">
+                <div class="navbar-brand">
                     <a href="index.html ">
-                        <img src="img/Ubicom USA logo.png" alt="Ubicom USA Logo">
+                        <img src="img/Ubicom USA no BG.png" alt="Ubicom USA Logo">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-bars"></i>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a href="index.html" class="nav-link">HOME</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="Solutions.html" class="nav-link">SOLUTIONS</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Solutions.html" role="button" aria-haspopup="true" aria-expanded="false">SOLUTIONS</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="Solutions.html">OVERVIEW</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Solutions-tab/Solutions.html">SOLUTIONS</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Solutions.html#Healthcare">Healthcare Analytics</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Solutions.html#Automotive">Automotive Test Automation</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Solutions-tab/Services.html">SERVICES</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Services.html#Development">Software Development and Testing</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Services.html#RPA">Robotic Process Automation</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a href="Company.html" class="nav-link">COMPANY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="Contact.html" class="nav-link">CONTACT</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Company.html" aria-haspopup="true" aria-expanded="false">COMPANY</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="Company.html#companyProfile">COMPANY PROFILE</a>
+                              <a class="dropdown-item" href="Company.html#History">HISTORY</a>
+                              <a class="dropdown-item" href="Company.html#GlobalCompanies">GLOBAL COMPANIES</a>
+                            </div>
                         </li>
                     </ul>
+                    <a href="Contact.html" class="btn button">CONTACT US</a>
                 </div>
             </div>
         </nav>
-        
-        <p class="previous-page">
+
+    
+        <!-- <p class="previous-page">
             <a href="index.html"><i class="fas fa-home"></i></a>
             <label>|</label>
-            <label>Company</label>
-        </p>
+            <label>Contact</label>
+        </p> -->
+
+<!-- HEADER BANNER -->
+        <div class="jumbotron jumbotron-fluid header-banner">
+            <div class="banner-caption">
+                <h1>COMPANY</h1>
+                <h5 class="banner-text">One sentence description about the Company</h5>
+            </div>
+        </div>
         
-        <!-- CONTENT -->
-        <p class="header">COMPANY PROFILE</p>
+<!-- CONTENT -->
         <div id="Company">
-            <div id="companyProfile">
+            <div id="companyProfile" class="container-padding">
+                <h1 class="header">UBICOM U.S.A., INC.</h1>
                 <p>
                     We started in 1993 as an Offshore Research and Development arm of a joint venture between IBM Japan and Toshiba TEC, we later on became an independent company, establishing our head office in Japan.
                 </p>
@@ -68,260 +92,244 @@
                 <p>
                     Let us help you navigate and thrive in the increasingly changing world of technology through strategic consulting, operational leadership, focus on excellence, and the co-creation of strategic breakthrough solutions.
                 </p>
-                <div id="officer" class="row">
-                    <div class="ofcr col-lg-3 col-md-4 col-5 mx-auto">
-                        
-                            <img class="officer-img" src="/img/Solutions/President Ishikawa-san.png" alt="Tadashi Ishikawa">
-                                               
-                        <div class="officer-info">
-                            <p class="officer-name">Tadashi Ishikawa</p>
-                            <label class="officer-position">President</label>
+            </div>
+
+<!-- President -->
+            <div id="officer" class="row container-padding justify-content-between">
+                <img class="officer-img col-sm-5" src="/img/Company/Steve jobs.png" alt="Tadashi Ishikawa">
+                                            
+                <div class="officer-info col-sm-7">
+                    <h2 class="officer-name sm-mid">Tadashi Ishikawa</h2>
+                    <h4 class="officer-position sm-mid">President</h4>
+                    <p class="officer-bio">Mr. Ishikawa assumed the role of CEO on February 11, 2019. As CEO, Mr. Ishikawa is focused on driving manufacturing excellence and helping customers navigate successfully through regionalization, artificial intelligence, and the emergence of 5G and advanced manufacturing. </p>
+                    <a href="#" class="btn-link align-self-end">
+                        <h5>Read the President's message</h5>
+                    </a>
+                </div>
+            </div>
+
+<!-- History -->
+            <div id="History">
+                <div id="carouselContent" class="carousel slide" data-ride="carousel">
+                    <h1 class="header mb-1">HISTORY</h1>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active text-center p-4">
+                            <h2 class="history-title">2017 - Company Establishment</h2>
+                            <div class="month-content row justify-content-center">
+                                <p class="col-sm-4 month sm-mid">February 1</p>
+                                <p class="col-sm-8 history-content sm-mid">Establishment of Advanced World Solutions U.S.A., Inc.</p>
+                            </div>
+                            <div class="month-content row justify-content-center">
+                                <p class="col-sm-4 month sm-mid">August 1</p>
+                                <p class="col-sm-8 history-content sm-mid">Company name change to Ubicom U.S.A., Inc.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center p-4">
+                            <h2 class="history-title">2018 - History Highlights</h2>
+                            <div class="month-content row justify-content-center">
+                                <p class="col-sm-4 month sm-mid">February 1</p>
+                                <p class="col-sm-8 history-content sm-mid">Establishment of Advanced World Solutions U.S.A., Inc.</p>
+                            </div>
+                            <div class="month-content row justify-content-center">
+                                <p class="col-sm-4 month sm-mid">August 1</p>
+                                <p class="col-sm-8 history-content sm-mid">Company name change to Ubicom U.S.A., Inc.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center p-4">
+                            <h2 class="history-title">2019 - History Highlights</h2>
+                            <div class="month-content row justify-content-center">
+                                <p class="col-sm-4 month sm-mid">February 1</p>
+                                <p class="col-sm-8 history-content sm-mid">Establishment of Advanced World Solutions U.S.A., Inc.</p>
+                            </div>
+                            <div class="month-content row justify-content-center">
+                                <p class="col-sm-4 month sm-mid">August 1</p>
+                                <p class="col-sm-8 history-content sm-mid">Company name change to Ubicom U.S.A., Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+<!-- Global Companies -->
+            <div id="GlobalCompanies" class="container-padding">
+                <h1 class="header">GLOBAL COMPANIES</h1>
+                <div class="japan">
+                    <h2 class="country">JAPAN</h2>
+                    <div class="row">
+                        <div class="col-md co-info">
+                            <img class="logo" src="img/Ubicom USA no BG.png" alt="Ubicom Holdings, Inc.">
+                            <h3 class="company md-mid">Ubicom Holdings, Inc.</h3>
+                            <a href="http://www.ubicom-hd.com" class="website md-mid"><h6>Visit website</h6></a>
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12 sm-mid">
+                                    <h5 class="branch">Head Office</h5>
+                                    <p class="address">Joko Bldg. 9F, 2-23-11 Koishikawa,
+                                    <br>Bunkyo-ku, Tokyo 112-0002
+                                    <br><b>TEL:</b> 03-5803-7339</p>
+                                </div>
+                                <div class="col-sm-6 col-xs-12 sm-mid">
+                                    <h5 class="branch">Osaka Office</h5>
+                                    <p class="address">Hiramatsu Bldg. 3F, 4-2-6 Fushimimachi,
+                                    <br>Chuo-ku, Osaka-shi, Osaka 541-0044
+                                    <br><b>TEL:</b>  06-6210-1481</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md co-info">
+                            <img class="logo" src="img/Ubicom USA no BG.png" alt="Ubicom Holdings, Inc.">
+                            <h3 class="company md-mid">AIS Co., Ltd.</h3>
+                            <a href="https://www.tais.co.jp" class="website md-mid"><h6>Visit website</h6></a>
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12 sm-mid">
+                                    <h5 class="branch">Head Office</h5>
+                                    <p class="address">Joko Bldg., 2-23-11 Koishikawa,
+                                    <br>Bunkyo-ku, Tokyo 112-0002
+                                    <br><b>TEL:</b>  03-5800-5911</p>
+                                </div>
+                                <div class="col-sm-6 col-xs-12 sm-mid">
+                                    <h5 class="branch">Kansai Office</h5>
+                                    <p class="address">Hiramatsu Bldg. 4-2-6 Fushimimachi,
+                                    <br>Chuo-ku, Osaka-shi, Osaka 541-0044
+                                    <br><b>TEL:</b>  06-6201-5911</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <hr>
-            
-            <!-- History -->
-            <p class="header">HISTORY</p>
-            <div id="history">
-                <div class="yr-title">
-                    <p class="col-4 yr">2017</p>
-                    <p>:</p>
-                    <p class="col-8 history-title">Company Establishment</p>
-                </div>
-                <div class="month-content">
-                    <p class="col-4 month">February 1</p>
-                    <p class="colon">:</p>
-                    <p class="col-8 history-content">Establishment of Advanced World Solutions U.S.A., Inc.</p>
-                </div>
-                <div class="month-content">
-                    <p class="col-4 month">August 1</p>
-                    <p class="colon">:</p>
-                    <p class="col-8 history-content">Company name change to Ubicom U.S.A., Inc.</p>
-                </div>
-                <br>
-                <!-- 2018 -->
-                <div class="yr-title">
-                    <p class="col-4 yr">2018</p>
-                    <p>:</p>
-                    <p class="col-8 history-title">Title</p>
-                </div>
-                <div class="month-content">
-                    <p class="col-4 month">Month</p>
-                    <p class="colon">:</p>
-                    <p class="col-8 history-content">Event</p>
-                </div>
-                <div class="month-content">
-                    <p class="col-4 month">Month</p>
-                    <p class="colon">:</p>
-                    <p class="col-8 history-content">Event</p>
-                </div>
-                <br>
-                <!-- 2019 -->
-                <div class="yr-title">
-                    <p class="col-4 yr">2019</p>
-                    <p>:</p>
-                    <p class="col-8 history-title">Title</p>
-                </div>
-                <div class="month-content">
-                    <p class="col-4 month">Month</p>
-                    <p class="colon">:</p>
-                    <p class="col-8 history-content">Event</p>
-                </div>
-                <div class="month-content">
-                    <p class="col-4 month">Month</p>
-                    <p class="colon">:</p>
-                    <p class="col-8 history-content">Event</p>
-                </div>
-            </div>
-            
-            <hr>
-            
-            <div id="presMsg">
-                <p class="header">MESSAGE OF THE PRESIDENT</p>
-                <div>
-                    <div class="presMsg row">
-                        <div class="president col-lg-3 col-sm-4 col-12">
-                            <img class="pres-img" src="/img/Solutions/President Ishikawa-san.png" alt="Tadashi Ishikawa">
-                            <p class="pres-name">Tadashi Ishikawa</p>
+
+                <hr>
+                
+                <div class="usa">
+                    <h2 class="country">U.S.A.</h2>
+                    <img class="logo-mid" src="img/Ubicom USA no BG.png" alt="Ubicom Holdings, Inc.">
+                    <h3 class="company text-center">Ubicom U.S.A., Inc.</h3>
+                    <div class="row">
+                        <div class="col-sm co-info sm-mid">
+                            <h5 class="branch">Head Office</h5>
+                            <p class="address">28175 Haggerty Road, Novi, Michigan, 48377 U.S.A.
+                            <br><b>TEL:</b>  (760) 123 - 4567</p>
                         </div>
-                        <div class="col-lg-9 col-sm-8 col-12">
-                            <p class="quote">
-                                "Continue to challenge the world with a bright and positive smile."
-                            </p>
-                            <p>
-                                AWS (Advanced World Systems, Inc., the predecessor of Ubicom Group, was founded in 1993. and has built a solid business foundation based on our 25-year experience in R&D and IT personnel development in the Philippines.
-                            </p>
-                            <p>
-                                We see social structural changes such as internationalization, the declining birthrate and aging population, and social innovations such as technological innovation in the fields of medical life sciences and robots and AI as opportunities for creating new businesses. 
-                            </p>
-                            <p>
-                                In addition to the existing manufacturing and service industries, the group is working together to develop and provide unique solution services utilizing state-of-the-art technologies in the financial, medical, automotive and robotics fields.
-                            </p>
-                            <p>
-                                In the future, we will aim to further improve our corporate value by expanding our group through M&A and capital and business alliances and by promoting our unique investment Win・Win model that leverages the advantages ofour domestic competitors
-                            </p>
-                            <p>
-                                Finally, the group's strength is to position its employees and their families, including overseas, as "friends", and by keeping everyone smiling and always cheerful and positive, each person is ahead of the times with ownership without being satisfied with the current situation. It is a corporate group that makes leaps and bounds.
-                            </p>
-                            <p>
-                                We will continue to create new markets as a company that brings together young and motivated people from Asian countries to bring together the most creative people in the industry and talk about their dreams.
-                            </p>
+                        <div class="col-sm co-info sm-mid">
+                            <h5 class="branch">New York Office</h5>
+                            <p class="address">27-01 Queens Plaza, North Long Island City 11101, New York
+                            <br><b>TEL:</b>  (760) 123 - 4567</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <hr>
-            
-            <div id="groupCompany">
-                <p class="header">GROUP OF COMPANIES</p>
-                <!-- JAPAN -->
-                <div class="flag">
-                    <img src="img/Company/Japan flag.png" alt="JAPAN">
-                    <p>JAPAN</p>
-                </div>
-                <!-- Ubicom HD -->
-                <div>
-                    <p class="com-name">Ubicom Holdings, Inc.</p>
-                    <div class="website">
-                        <p>Website</p>
-                        <p><a href="http://www.ubicom-hd.com/"> http://wwww.ubicom-hd.com</a></p>
-                    </div>
-                    <div>
-                        <p class="ofc">Head Office</p>
-                        <p class="address">Joko Bldg. 9F, 2-23-11 Koishikawa, Bunkyo-ku, Tokyo 112-0002</p>
-                        <p class="tel">TEL 03-5803-7339</p>
-                    </div>
-                    <div>
-                        <p class="ofc">Osaka Office</p>
-                        <p class="address">Hiramatsu Bldg. 3F, 4-2-6 Fushimimachi, Chuo-ku, Osaka-shi, Osaka 541-0044</p>
-                        <p class="tel">TEL 06-6210-1481</p>
-                    </div>
-                </div>
-                
-                <!-- AIS -->
-                <div>
-                    <p class="com-name">AIS Co., Ltd.</p>
-                    <div class="website">
-                        <p>Website</p>
-                        <p><a href="http://www.tais.co.jp/"> http://wwww.tais.co.jp</a></p>
-                    </div>
-                    <div>
-                        <p class="ofc">Head Office</p>
-                        <p class="address">Joko Bldg., 2-23-11 Koishikawa, Bunkyo-ku, Tokyo 112-0002</p>
-                        <p class="tel">TEL 03-5800-5911</p>
-                    </div>
-                    <div>
-                        <p class="ofc">Osaka Office</p>
-                        <p class="address">Hiramatsu Bldg., 4-2-6 Fushimimachi, Chuo-ku, Osaka-shi, Osaka 541-0044</p>
-                        <p class="tel">TEL 06-6201-5911</p>
+
+                <hr>
+
+                <div class="ph">
+                    <h2 class="country">PHILIPPINES</h2>
+                    <img class="logo-mid" src="img/Ubicom USA no BG.png" alt="Ubicom Holdings, Inc.">
+                    <div class="row">
+                        <div class="col-md co-info">
+                            <h3 class="company md-mid">Advanced World Systems</h3>
+                            <a href="https://www.awsys-i.com/en/home.php" class="website"><h6>Visit website</h6></a>
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12 sm-mid">
+                                    <h5 class="branch">Head Office</h5>
+                                    <p class="address">Unit 505 5F ATC BPO 1 Madrigal Avenue Alabang Town Center, Ayala Alabang, Muntinlupa, 1770 Metro Manila
+                                    <!-- <br><b>TEL:</b>  03-5803-7339</p> -->
+                                </div>
+                                <div class="col-sm-6 col-xs-12 sm-mid">
+                                    <h5 class="branch">Cebu Office</h5>
+                                    <p class="address">5F PDI Condominium Archbishop Reyes Ave., cor Panis St., Cebu City, 6000 Philippines
+                                    <br><b>TEL:</b>  +(63-32)-231-0321</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md co-info">
+                            <h3 class="company md-mid">Advanced World Solutions</h3>
+                            <a href="https://www.awsys-i.com/en/home.php" class="website"><h6>Visit website</h6></a>
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12 sm-mid">
+                                    <h5 class="branch">Head Office</h5>
+                                    <p class="address">3F Multinational Bancorporation Centre, 6805 Ayala Ave., Makati City, 1226 Philippines
+                                    <br><b>TEL:</b>  +(63-2)-889-5070</p>
+                                </div>
+                                <div class="col-sm-6 col-xs-12 sm-mid">
+                                    <h5 class="branch">Cebu Office</h5>
+                                    <p class="address">Ground Floor, i1 Building, Cebu IT Park, Apas Cebu City, 6000 Philippines
+                                    <br><b>TEL:</b>  +(63-32)-268-6405</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- CHINA -->
-                <div class="flag">
-                    <img src="img/Company/China flag.png" alt="CHINA">
-                    <p>CHINA</p>
-                </div>
-                <!-- Beijing -->
-                <div>
-                    <p class="com-name">Beijing Iveson Technology Co., Ltd. (AWS (Beijing), Ltd.)</p>
-                    <div>
-                        <p class="ofc">Beijing Office</p>
-                        <p class="address">Rm.559, 5F, South Block, Raycom Info Tech Park, No.2 Kexueyuan South Road, Zhongguancun, Beijing, China </p>
-                        <p class="tel">TEL + 86-10-5982-2174</p>
-                    </div>
-                </div>
-                <!-- Kunshan -->
-                <div>
-                    <p class="com-name">Beijing Iveson Technology Co., Ltd. Kunshan Branch (AWS (Kunshan), Ltd.)</p>
-                    <div>
-                        <p class="ofc">Kunshan Office</p>
-                        <p class="address">Rm.901, 9F, MP Modern Plaza, No.8, Weiye Road. Kunshan City. Jiangsu Preferecture, China </p>
-                        <p class="tel">TEL + 86-512-5033-1032</p>
-                    </div>
-                </div>
-                
-                <!-- PHILIPPINES -->
-                <div class="flag">
-                    <img src="img/Company/Philippine flag.png" alt="PHILIPPINES">
-                    <p>PHILIPPINES</p>
-                </div>
-                <!-- AWSys -->
-                <div>
-                    <p class="com-name">Advanced World Systems, Inc.</p>
-                    <div class="website">
-                        <p>Website</p>
-                        <p><a href="http://www.awsys-i.com/"> http://wwww.awsys-i.com</a></p>
-                    </div>
-                    <div>
-                        <p class="ofc">Alabang - Head Office</p>
-                        <p class="address">Unit 505 5F ATC BPO 1 Madrigal Avenue Alabang Town Center, Ayala Alabang, Muntinlupa, 1770 Metro Manila</p>
-                    </div>
-                    <div>
-                        <p class="ofc">Cebu Office</p>
-                        <p class="address">5F PDI Condominium Archbishop Reyes Ave., cor Panis St., Cebu City, 6000 Philippines </p>
-                        <p class="tel">TEL + (63-32)-231-0321</p>
-                    </div>
-                </div>
-                
-                <!-- AWSol -->
-                <div>
-                    <p class="com-name">Advanced World Solutions, Inc.</p>
-                    <div>
-                        <p class="ofc">Makati Office</p>
-                        <p class="address">3F Multinational Bancorporation Centre, 6805 Ayala Ave., Makati City, 1226 Philippines </p>
-                        <p class="tel">TEL + (63-2)-889-5070</p>
-                    </div>
-                    <div>
-                        <p class="ofc">Cebu Office</p>
-                        <p class="address">Ground Floor, i1 Building, Cebu IT Park, Apas Cebu City 6000 Philippines </p>
-                        <p class="tel">TEL + (63-32) -268-6405</p>
-                    </div>
-                </div>
-                
-                <!-- USA -->
-                <div class="flag">
-                    <img src="img/Company/USA flag.png" alt="USA">
-                    <p>U.S.A.</p>
-                </div>
-                <!-- Ubicom USA -->
-                <div>
-                    <p class="com-name">Ubicom U.S.A., Inc.</p>
-                    <div>
-                        <p class="ofc">New York - Head Office</p>
-                        <p class="address">27-01 Queens Plaza, North Long Island City 11101, New York</p>
-                    </div>
-                    <div>
-                        <p class="ofc">Michigan Office</p>
-                        <p class="address">28175 Haggerty Road, Novi, Michigan, 48377 U.S.A</p>
+
+                <hr>
+
+                <div class="china">
+                    <h2 class="country">CHINA</h2>
+                    <div class="row">
+                        <div class="col-md co-info">
+                            <h3 class="company md-mid">Beijing Aiweisen Technology Co., Ltd.
+                            <br>(AWS (Beijing), Ltd.)</h3>
+                            <p class="address md-mid">Office 559, 5/F Soouth Block, Raycom Info Tech Park, No.2 Kexueyuan South Road, Zhongguancun, Beijing 1000190 
+                            <br><b>TEL:</b>  03-5803-7339</p>
+                        </div>
+                        <div class="col-md co-info">
+                            <h3 class="company md-mid">Beijing Aiweisen Technology Co., Ltd.
+                            <br>(AWS (Kunshan), Ltd.)</h3>
+                            <p class="address md-mid">Rm 901. 9F. MP Modern Plaza, No. 8, Weiye Road. Kunshan City. Jiangsu Preferecture, China
+                            <br><b>TEL:</b>  +86-512-5033-1032</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="footer">
-            <div class="container-fluid footer-label">
-                <div class="company-info">
-                    <label>
-                        <label>27-01 Queens Plaza North Long Island City 11101, New York</label>
-                        <label>|</label>
-                        <label>(760) 123 - 4567</label>
-                    </label>
+    </div>
+<!-- FOOTER -->
+    <div id="footer">
+        <div class="footer-contactUs">
+            <h1>Stay in Touch</h1>
+            <button type="button" class="btn btn-outline-light btn-lg">CONTACT US</button>
+        </div>
+        <div class="footer">
+            <div class="footer-l1">
+                <div class="footer-c1">
+                    <img class="footer-logo" src="img/Ubicom USA no BG.png" alt="UBICOM USA, INC." >
                 </div>
-                <div class="footer-item">
-                    <label>
-                        <a href="Contact.html" class="footer-link">Contact Us</a>
-                        <a href="#" class="footer-link">|</a>
-                        <a href="Information-Security.html" class="footer-link">Information Security Policy</a>
-                        <a href="#" class="footer-link">|</a>
-                        <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
-                    </label>
-                </div>           
-                <div class=company-name>
-                    <label>Copyright 2019. Ubicom U.S.A., Inc.</label>
+                <div class="social-media order-xl-last">
+                    <a class="nav-link justify-self-end active" href="https://www.linkedin.com/company/ubicom-usa-inc/about/">
+                        <i class="fab fa-linkedin-in"></i></a>
+                    <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i></a>
+                    <a class="nav-link" href="https://twitter.com/?lang=en">
+                        <i class="fab fa-twitter"></i></a>                
+                </div>
+                <div class="footer-c2">
+                    <div class="footer-nav">
+                        <a class="nav-link active" href="Solutions.html">SOLUTIONS</a>
+                        <a class="nav-link" href="Company.html">ABOUT US</a>
+                        <a class="nav-link" href="Company.html#GlobalCompanies">GLOBAL COMPANIES</a>
+                        <a class="nav-link" href="Contact.html">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-l2 align-self-center">
+                <div class="footer-c1">
+                    © 2019 Ubicom U.S.A., Inc. All Rights Reserved.
+                </div>
+                <div class="footer-l2-mid">
+                    <a href="Terms.html" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">|</a>
+                    <a href="Information-Security.html" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">|</a>
+                    <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
+                </div>
+                <div class="footer-last">
+                    Free background photos from
+                    <a href="https://pngtree.com/free-backgrounds">pngtree.com</a>  
                 </div>
             </div>
         </div>

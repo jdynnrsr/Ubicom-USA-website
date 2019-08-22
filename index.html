@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ubicom U.S.A., Inc.</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -16,27 +16,44 @@
 </head>
 <body>
     <div id="container-fluid">
-        <!-- Navigation -->
+<!-- NAVIGATION -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <div class="navbar-logo">
+                <div class="navbar-brand">
                     <a href="index.html ">
-                        <img src="img/Ubicom USA logo.png" alt="Ubicom USA Logo">
+                        <img src="img/Ubicom USA no BG.png" alt="Ubicom USA Logo">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-bars"></i>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a href="index.html" class="nav-link">HOME</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="Solutions.html" class="nav-link">SOLUTIONS</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Solutions.html" role="button" aria-haspopup="true" aria-expanded="false">SOLUTIONS</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="Solutions.html">OVERVIEW</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Solutions-tab/Solutions.html">SOLUTIONS</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Solutions.html#Healthcare">Healthcare Analytics</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Solutions.html#Automotive">Automotive Test Automation</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Solutions-tab/Services.html">SERVICES</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Services.html#Development">Software Development and Testing</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Services.html#RPA">Robotic Process Automation</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a href="Company.html" class="nav-link">COMPANY</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Company.html" aria-haspopup="true" aria-expanded="false">COMPANY</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="Company.html#companyProfile">COMPANY PROFILE</a>
+                              <a class="dropdown-item" href="Company.html#History">HISTORY</a>
+                              <a class="dropdown-item" href="Company.html#GlobalCompanies">GLOBAL COMPANIES</a>
+                            </div>
                         </li>
                     </ul>
                     <a href="Contact.html" class="btn button">CONTACT US</a>
@@ -44,15 +61,17 @@
             </div>
         </nav>
 
-        <!-- Hero Image with Video -->
-        <div class="jumbotron jumbotron-fluid header-banner">
+<!-- HEADER BANNER -->
+        <div class="jumbotron jumbotron-fluid home-banner">
             <!-- <div class="hero-video embed-responsive embed-responsive-16by9 col-xl-8">
                     <video controls autoplay muted loop class="embed-responsive-item" id="heroVideo">
                     <source src="./img/Ubicom Holdings, Inc. video.mp4" type="video/mp4">
                 </video>
             </div> -->
-            <h1 class="banner-caption display-4">Description about the Ubicom U.S.A., Inc.</h1>
+            <h1 class="home-caption">Description about the Ubicom U.S.A., Inc.</h1>
         </div>
+
+<!-- HOME -->
         <div id="Home">
             <div class="about jumbotron jumbotron-fluid justify-content-center">
                 <div class="container-padding">
@@ -64,15 +83,16 @@
                 </div>
             </div>
 
+<!-- SOLUTIONS -->
             <div class="container-padding">
                 <h1 class="header">SOLUTIONS</h1>
-                <div class="solutions row justify-content-around">
+                <div class="solutions row justify-content-center">
                     <div class="card-deck">
-                        <div class="col-md-6 text-center card">
+                        <div class="col-lg-6 text-center card">
                             <div>
                                 <i class="fas fa-stethoscope"></i>
-                                <h1 class="card-title">
-                                    Healthcare<br>Analytics</h1>
+                                <h2 class="card-title">
+                                    Healthcare<br>Analytics</h2>
                                 <div class="card-text">
                                     <P class="card-text">
                                         Solutions provider for top medical and pharmaceutical companies around the world.
@@ -81,12 +101,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 text-center card">
+                        <div class="col-lg-6 text-center card">
                             <div>
                                 <i class="fas fa-car"></i>
-                                <h1 class="card-title">
+                                <h2 class="card-title">
                                     Automotive<br>Test Automation
-                                </h1>
+                                </h2>
                                 <div class="card-text">
                                     <P>
                                         Smart, connected devices allow for stronger customer connection, insight, and new revenue streams.
@@ -99,29 +119,23 @@
                 </div>
             </div>
 
+<!-- SERVICES -->
             <div class="h-services bg">
                 <div class="container-padding">
                     <h1 class="header">SERVICES</h1>
                     <div class="row justify-content-between">
-                        <div class="col-lg-4 col-md-6 text-center">
-                            <i class="fas fa-desktop"></i>
-                            <h1 class="hs-title">Software<br>Development</h1>
+                        <div class="col text-center">
+                            <i class="fas fa-laptop-code"></i>
+                            <h2 class="hs-title">Software Development and Testing</h2>
                             <P class="hs-text text-justify">
                                 Create cutting-edge business applications designed to attain your business objectives for exponential growth.
                             </P>
                             <a href="Solutions-tab/Services.html#Development" class="btn btn-link">Read More</a>
                         </div>
-                        <div class="col-lg-4 col-md-6 text-center">
-                            <i class="far fa-check-square"></i>
-                            <h1 class="hs-title">Software<br>Testing</h1>
-                            <P class="hs-text text-justify">
-                                Leave quality to the experts, with ISO and ISTQB grounded practices and an all-certified team of engineers.
-                            </P>
-                            <a href="Solutions-tab/Services.html#Testing" class="btn btn-link">Read More</a>
-                        </div>
-                        <div class="col-lg-4 text-center">
+                        
+                        <div class="col text-center">
                             <i class="fas fa-cogs"></i>
-                            <h1 class="hs-title">Robotic Process Automation</h1>
+                            <h2 class="hs-title">Robotic Process Automation</h2>
                             <P class="hs-text text-justify">
                                 Leave quality to the experts, with ISO and ISTQB grounded practices and an all-certified team of engineers.
                             </P>
@@ -130,79 +144,54 @@
                     </div>
                 </div>
             </div>
-
-            
-                <!-- <div id="location" class="col-md-6 right">
-                    <p class="header">LOCATION</p>
-                    <p class="company-name">
-                        Ubicom U.S.A., Inc.
-                    </p>
-                    <div class="add-no">
-                        <p>
-                            <i class="fas fa-map-marker-alt"></i>
-                            27-01 Queens Plaza, North Long Island City 11101, New York
-                        </p>
-                        <p>
-                            <i class="fas fa-phone-alt"></i>
-                            (760) 123-4567
-                        </p>
-                    </div>
-                    <div id="map-container-google-2" class="z-depth-1-half map-container">
-                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5094308893085!2d-73.94093218459388!3d40.75081887932769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258d502dee1dd%3A0x17590ee3a9176708!2s27-01+Queens+Plaza+N%2C+Long+Island+City%2C+NY+11101%2C+USA!5e0!3m2!1sen!2sph!4v1564046382245!5m2!1sen!2sph" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div> -->
         </div>
         
-        
-        <div id="footer" class="footer">
-            <div class="footer-contactUs">
-                <h1>
-                    Stay in Touch
-                    <button type="button" class="btn btn-outline-light btn-lg">CONTACT US</button>
-                </h1>
+    </div>
+<!-- FOOTER -->
+    <div id="footer">
+        <div class="footer-contactUs">
+            <h1>Stay in Touch</h1>
+            <button type="button" class="btn btn-outline-light btn-lg">CONTACT US</button>
+        </div>
+        <div class="footer">
+            <div class="footer-l1">
+                <div class="footer-c1">
+                    <img class="footer-logo" src="img/Ubicom USA no BG.png" alt="UBICOM USA, INC." >
+                </div>
+                <div class="social-media order-xl-last">
+                    <a class="nav-link justify-self-end active" href="https://www.linkedin.com/company/ubicom-usa-inc/about/">
+                        <i class="fab fa-linkedin-in"></i></a>
+                    <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i></a>
+                    <a class="nav-link" href="https://twitter.com/?lang=en">
+                        <i class="fab fa-twitter"></i></a>                
+                </div>
+                <div class="footer-c2">
+                    <div class="footer-nav">
+                        <a class="nav-link active" href="Solutions.html">SOLUTIONS</a>
+                        <a class="nav-link" href="Company.html">ABOUT US</a>
+                        <a class="nav-link" href="Company.html#GlobalCompanies">GLOBAL COMPANIES</a>
+                        <a class="nav-link" href="Contact.html">CONTACT US</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-label">
-                <div class="company-info">
-                    <label>
-                        <img src="img/Ubicom USA logo.png"UBICOM USA, INC. >
-                        <address>27-01 Queens Plaza, North Long
-                            <br>
-                            Island City, New York, 11101
-                        </address>
-                    </label>
-                    <label class="links align-self-end">
-                        <ul class="nav footer-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="Solutions.html">SOLUTIONS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Company.html">ABOUT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Contact.html">CONTACT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Company.html#groupCompany">LOCATIONS</a>
-                            </li>
-                        </ul>
-                    
-                        <label>Copyright 2019. Ubicom U.S.A., Inc.</label>
-                        <br>
-                        <a href="Terms.html" class="footer-link">Terms</a>
-                        <a href="#" class="footer-link">|</a>
-                        <a href="Information-Security.html" class="footer-link">Privacy Policy</a>
-                        <a href="#" class="footer-link">|</a>
-                        <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
-                    </label>
+            <div class="footer-l2 align-self-center">
+                <div class="footer-c1">
+                    © 2019 Ubicom U.S.A., Inc. All Rights Reserved.
+                </div>
+                <div class="footer-l2-mid">
+                    <a href="Terms.html" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">|</a>
+                    <a href="Information-Security.html" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">|</a>
+                    <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
+                </div>
+                <div class="footer-last">
+                    Free background photos from
+                    <a href="https://pngtree.com/free-backgrounds">pngtree.com</a>  
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    
 </body>
 </html>

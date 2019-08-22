@@ -5,128 +5,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ubicom U.S.A., Inc.</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://kit.fontawesome.com/40ac460209.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="./main.js"></script>
 </head>
 <body>
-    <div id="container">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div id="container-fluid">
+<!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <div class="navbar-logo">
+                <div class="navbar-brand">
                     <a href="index.html ">
-                        <img src="img/Ubicom USA logo.png" alt="Ubicom USA Logo">
+                        <img src="img/Ubicom USA no BG.png" alt="Ubicom USA Logo">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-bars"></i>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a href="index.html" class="nav-link">HOME</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="Solutions.html" class="nav-link">SOLUTIONS</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Solutions.html" role="button" aria-haspopup="true" aria-expanded="false">SOLUTIONS</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="Solutions.html">OVERVIEW</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Solutions-tab/Solutions.html">SOLUTIONS</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Solutions.html#Healthcare">Healthcare Analytics</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Solutions.html#Automotive">Automotive Test Automation</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Solutions-tab/Services.html">SERVICES</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Services.html#Development">Software Development and Testing</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Services.html#RPA">Robotic Process Automation</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a href="Company.html" class="nav-link">COMPANY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="Contact.html" class="nav-link">CONTACT</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Company.html" aria-haspopup="true" aria-expanded="false">COMPANY</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="Company.html#companyProfile">COMPANY PROFILE</a>
+                              <a class="dropdown-item" href="Company.html#History">HISTORY</a>
+                              <a class="dropdown-item" href="Company.html#GlobalCompanies">GLOBAL COMPANIES</a>
+                            </div>
                         </li>
                     </ul>
+                    <a href="Contact.html" class="btn button">CONTACT US</a>
                 </div>
             </div>
         </nav>
-        
-        <p class="previous-page">
+    
+        <!-- <p class="previous-page">
             <a href="index.html"><i class="fas fa-home"></i></a>
             <label>|</label>
             <label>Contact</label>
-        </p>
-        
-        <!-- CONTENT -->
-        <p class="header">CONTACT US</p>
-        <div id="Contact" class="col-xl-8 col-lg-9 col-md-8 mx-auto">
-            <p class="contact-label">Email us with any questions or inquiries. We should be happy to answer your questions and set up a meeting with you.</p>
+        </p> -->
 
-            <form action="https://formspree.io/jar16r10@gmail.com" method="POST">
-                <label>
-                    NAME *
-                    <div class="name">
-                        <input type="text" name="First Name" class="fname col-6" placeholder="First Name">
-                        <input type="text" name="Last Name" class="lname col-6" placeholder="Last Name">
-                    </div>
-                    <div class="error_name">
-                    </div>
-                </label>
-                <label>
-                    ORGANIZATION
-                    <input type="text" name="Organization" class="organization">
-                    <div class="error_org">
-                    </div>
-                </label>
-                <label>
-                    E-MAIL ADDRESS *
-                    <input type="email" name="Email Address" class="email">
-                    <div class="error_email">   
-                    </div>
-                </label>
-                <label>
-                    CONTACT NUMBER *
-                    <input type="number" name="Contact Number" class="contactno">
-                    <div class="error_contactno">
-                    </div>
-                </label>
-                <label>
-                    MESSAGE *
-                    <textarea name="Message" class="message"></textarea>
-                    <div class="error_msg">
-                    </div>
-                    <p class="required">* Required</p>
-                </label>
-                <button type="submit" class="btn btn-md submit">
-                    SEND MESSAGE
-                </button>
-            </form>
-
+<!-- HEADER BANNER -->
+        <div class="jumbotron jumbotron-fluid header-banner">
+            <div class="banner-caption">
+                <h1>CONTACT US</h1>
+                <h5 class="banner-text">Email us with any questions or inquiries. We should be happy to answer your questions and set up a meeting with you.</h5>
+            </div>
         </div>
-        
-
-
-
-
-
-
-
-
-        <div id="footer">
-            <div class="container-fluid footer-label">
-                <div class="company-info">
+    
+    
+<!-- CONTENT -->
+        <div class="contact row container-contact justify-content-around">
+            <div id="ContactForm" class="col-lg-6 aside order-lg-last">
+                <h1 class="contact-header">Complete the Form to Get in Touch with Us</h1>  
+                <form action="https://formspree.io/jar16r10@gmail.com" method="POST">
+                    <div class="name">
+                        <label class="first">        
+                            FIRST NAME <mark>*</mark>
+                            <input type="text" name="First Name" class="fname">
+                            <div class="error_name">
+                            </div>
+                        </label>
+                        <label class="last">
+                            LAST NAME <mark>*</mark>
+                            <input type="text" name="Last Name" class="lname">
+                        </label>
+                    </div>
                     <label>
-                        <label>27-01 Queens Plaza North Long Island City 11101, New York</label>
-                        <label>|</label>
-                        <label>(760) 123 - 4567</label>
+                        ORGANIZATION
+                        <input type="text" name="Organization" class="organization">
+                        <div class="error_org">
+                        </div>
                     </label>
+                    <label>
+                        E-MAIL ADDRESS <mark>*</mark>
+                        <input type="email" name="Email Address" class="email">
+                        <div class="error_email">   
+                        </div>
+                    </label>
+                    <label>
+                        CONTACT NUMBER <mark>*</mark>
+                        <input type="tel" name="Contact Number" class="contactno">
+                        <div class="error_contactno">
+                        </div>
+                    </label>
+                    <label>
+                        MESSAGE <mark>*</mark>
+                        <textarea name="Message" class="message"></textarea>
+                        <div id="the-count">
+                            <span id="current">0</span>
+                            <span id="maximum">/ 1000</span>
+                        </div>
+                        <div class="error_msg">
+                        </div>
+                        <p class="required"><mark>*</mark> Required</p>
+                    </label>
+                    <div class="g-recaptcha" data-sitekey="6LepTbQUAAAAAG8H5GDe-Yq1SJaaRVI6jqsGHjXH"></div>
+                    <button type="submit" class="btn btn-md submit">
+                        SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+            <div id="Location" class="col-lg-5 align-self-center">
+                <h1 class="header">LOCATION</h1>
+                <div class="add-no">
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>27-01 Queens Plaza, North Long Island City, New York, 11101</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 align-self-center">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="col-11">
+                            <p>(760) 123-4567</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-item">
-                    <label>
-                        <a href="Contact.html" class="footer-link">Contact Us</a>
-                        <a href="#" class="footer-link">|</a>
-                        <a href="Information-Security.html" class="footer-link">Information Security Policy</a>
-                        <a href="#" class="footer-link">|</a>
-                        <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
-                    </label>
-                </div>           
-                <div class=company-name>
-                    <label>Copyright 2019. Ubicom U.S.A., Inc.</label>
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7188.714144142748!2d-73.93682033960516!3d40.751422841061945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258d502dee1dd%3A0x17590ee3a9176708!2s27-01+Queens+Plaza+N%2C+Long+Island+City%2C+NY+11101%2C+USA!5e0!3m2!1sen!2sph!4v1566269269368!5m2!1sen!2sph" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- FOOTER -->
+    <div id="footer">
+        <div class="footer-contactUs">
+            <h1>Stay in Touch</h1>
+            <button type="button" class="btn btn-outline-light btn-lg">CONTACT US</button>
+        </div>
+        <div class="footer">
+            <div class="footer-l1">
+                <div class="footer-c1">
+                    <img class="footer-logo" src="img/Ubicom USA no BG.png" alt="UBICOM USA, INC." >
+                </div>
+                <div class="social-media order-xl-last">
+                    <a class="nav-link justify-self-end active" href="https://www.linkedin.com/company/ubicom-usa-inc/about/">
+                        <i class="fab fa-linkedin-in"></i></a>
+                    <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i></a>
+                    <a class="nav-link" href="https://twitter.com/?lang=en">
+                        <i class="fab fa-twitter"></i></a>                
+                </div>
+                <div class="footer-c2">
+                    <div class="footer-nav">
+                        <a class="nav-link active" href="Solutions.html">SOLUTIONS</a>
+                        <a class="nav-link" href="Company.html">ABOUT US</a>
+                        <a class="nav-link" href="Company.html#GlobalCompanies">GLOBAL COMPANIES</a>
+                        <a class="nav-link" href="Contact.html">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-l2 align-self-center">
+                <div class="footer-c1">
+                    © 2019 Ubicom U.S.A., Inc. All Rights Reserved.
+                </div>
+                <div class="footer-l2-mid">
+                    <a href="Terms.html" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">|</a>
+                    <a href="Information-Security.html" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">|</a>
+                    <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
+                </div>
+                <div class="footer-last">
+                    Free background photos from
+                    <a href="https://pngtree.com/free-backgrounds">pngtree.com</a>  
                 </div>
             </div>
         </div>

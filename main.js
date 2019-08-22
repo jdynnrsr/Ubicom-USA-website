@@ -1,6 +1,5 @@
 $(document).ready(function () {
     $('.submit').click(function (event) {
-        console.log('CLicked')
 
         var fname = $('.fname').val()
         var lname = $('.lname').val()
@@ -44,4 +43,24 @@ $(document).ready(function () {
         }
         
     })
+
+    $('textarea').keyup(function() {
+    
+        var characterCount = $(this).val().length,
+            current = $('#current'),
+            maximum = $('#maximum'),
+            theCount = $('#the-count');
+          
+        current.text(characterCount);
+    })
+    // $('#navbarResponsive ul li').click(function (ev) {
+    //     $('#navbarResponsive ul li a').filter( function() {
+    //             return this.href==location.href
+    //         }).addClass('active').siblings().removeClass('actvie')
+            
+    //         }
+    //     )
+    //     // $('#navbarResponsive ul li').removeClass('active');
+    //     // $(this).addClass('active');
+    // // })
 })
