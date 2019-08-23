@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900&display=swap');
+@import url('style.css');
+
 /*---CONTENT----*/
 .content {
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 8%;
+    margin-right: 8%;
     color: #3E3E3E;
     text-align: justify;
-    font-size: 1.75rem;
+    font-size: 90%;
+    line-height: 2;
 }
 
 

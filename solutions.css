@@ -25,17 +25,17 @@
 }
 .card-col {
     padding: 0 0 !important;
-    box-shadow: 0 1px 5px 0 rgb(157, 194, 218);
+    box-shadow: 0 1px 5px 0 #9DC2DA;
     margin-bottom: 5% !important;
 }
 .card-title {
-    color: #1689C3;
+    color: #0B6DAC;
 }
 .btn-link {
-    color: #0E83CE !important;
+    color: #1589C3 !important;
 }
 .card-horizontal {
-    box-shadow: 0 1px 5px 0 rgb(157, 194, 218);
+    box-shadow: 0 1px 5px 0 #9DC2DA;
     margin-bottom: 5% !important;
 }
 .services .card-body {
@@ -82,11 +82,33 @@
 @media (max-width: 596px) {
     
 }
-@media (max-width: 526px) {
+@media (max-width: 575px) {
+    .banner-caption {
+        text-align: left !important;
+        padding: 5% 6% !important;
+        width: 55% !important;
+    }    
+}
+@media (max-width: 538px) {
+    .banner-caption {
+        width: 60% !important;
+    }
+    .banner-text {
+        font-size: 1.2rem !important;
+    }
 }
 @media (max-width: 383px) {
+    .banner-caption {
+        width: 70% !important;
+    }
+    .banner-text {
+        font-size: 1rem !important;
+    }
 }
-@media (max-width: 337px) {
+@media (max-width: 348px) {
+    .banner-text {
+        font-size: .9rem !important;
+    }
 }
 
 /*========== BOOTSTRAP BREAK POINTS:

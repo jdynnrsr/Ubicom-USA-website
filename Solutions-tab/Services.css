@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,900&display=swap');
+@import url('../style.css');
+
+
+.header-banner{
+    background-image: url("../img/theme\ color.png") !important;
+    width: 100%;
+    align-content: center !important;
+    height: 15rem !important;
+}
+.banner-caption {
+    margin-bottom: 0% !important;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+.container-padding {
+    padding: 3% 5%;
+}
+.jumbotron {
+    background-color: rgba(0, 157, 255, 0.247) !important;
+}
+#Development, #RPA {
+    font-size: 80%;
+    line-height: 2 !important;
+}
+.jumbotron {
+    padding: unset !important;
+}
+.serv-img {
+    width: 100%;
+}
+.list {
+    padding-left: 5%;
+    padding-top: 3%;
+}
+.list2 {
+    position: absolute;
+    visibility: hidden;
+}
+.serv-title {
+    color: #0B6DAC;
+    margin-bottom: 2% !important;
+}
+.serv-title2 {
+    position: absolute;
+    visibility: hidden;
+}
+.bullet-title {
+    color: #1589C3;
+}
+.serv-details {
+    text-align: justify;
+}
+
+
+/* ---Media Queries---*/
+@media (max-width: 1100px) {
+    
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 767px) {
+    .list {
+        position: absolute;
+        visibility: hidden;
+    }
+    .list2 {
+        position: relative;
+        visibility: visible;
+        padding-left: 5%;
+        padding-top: 0;
+    }
+    .serv-title {
+        position: absolute;
+        visibility: hidden;
+    }
+    .serv-title2 {
+        text-align: center;
+        position: relative;
+        visibility: visible;
+        color: #0B6DAC;
+        margin-bottom: 2% !important;
+    }
+    
+}
+@media (max-width: 596px) {
+    
+}
+@media (max-width: 526px) {
+}
+@media (max-width: 383px) {
+}
+@media (max-width: 337px) {
+}
+
+/*========== BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default on Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200 px) { ... }
+
+=============*/

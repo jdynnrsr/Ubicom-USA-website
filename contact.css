@@ -3,6 +3,7 @@
 
 
 .header-banner{
+    background-position: left !important;
     background-image: url("img/Contact/B-Contact.png") !important;
     position: absolute;
     width: 100%;
@@ -34,7 +35,7 @@
 .contact-header {
     font-weight: 300;
     text-align: center;
-    color: #146DD2;
+    color: #0B6DAC;
     margin-bottom: 1.5rem;
 
 }
@@ -46,7 +47,7 @@
 mark {
     padding: 0 !important;
     background-color: transparent !important;
-    color:rgb(182, 0, 0);
+    color:#B60000;
 }
 #ContactForm label {
     margin-bottom: 3%;
@@ -94,7 +95,7 @@ mark {
 }
 #ContactForm form p {
     font-size: 60%;
-    color: rgb(182, 0, 0);
+    color: #B60000;
     margin-bottom: unset;
 }
 #ContactForm .required {
@@ -118,7 +119,7 @@ mark {
     height: 70%;
 }
 #Location i {
-    color: #0E83CE;
+    color: #0B6DAC;
     font-size: 150% !important;
 }
 #Location .google-map {
@@ -172,11 +173,38 @@ mark {
 @media (max-width: 596px) {
     
 }
-@media (max-width: 526px) {
-    
+@media (max-width: 575px) {
+    .header-banner{
+        background-position: left !important;
+    }
+    .banner-caption {
+        text-align: left !important;
+        width: 55% !important;
+    } 
+    .banner-text {
+        font-size: 1.2rem !important;
+    }
+}
+@media (max-width: 538px) {
+    .banner-caption {
+        width: 60% !important;
+    }
+    .banner-text {
+        font-size: 1rem !important;
+    }
 }
 @media (max-width: 383px) {
-    
+    .banner-caption {
+        width: 70% !important;
+    }
+    .banner-text {
+        font-size: 1rem !important;
+    }
+}
+@media (max-width: 348px) {
+    .banner-text {
+        font-size: .9rem !important;
+    }
 }
 @media (max-width: 337px) {
 }

@@ -24,11 +24,12 @@
     align-content: left;
     justify-content: center !important;
     flex-direction: column;
+    height: 34rem;
 }
 .home-caption {
     margin-bottom: 0% !important;
     text-align: left;
-    padding:12% 8%;
+    padding: 12% 8%;
     width: 50%;
     color: white;
 }
@@ -37,7 +38,7 @@
     text-align: center;
 }
 .about .button {
-    background: #0E83CE !important;
+    background: #0B6DAC !important;
     color: #fff !important;
     border-radius: 0% !important;
     font-weight: 400 !important;
@@ -97,30 +98,6 @@ video{
     font-size: 110%;
     font-weight: 500;
 }
-/* .h-services .col-lg-4:first-child::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background: none;
-    width: 1px;
-}
-.h-services .col-lg-4::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background: #ffffff;
-    width: 1px;
-} */
-/* .h-services .col {
-    border-right: solid;
-}
-.h-services .col :last-child {
-    border-right: 0px
-} */
 
 
 
@@ -129,16 +106,32 @@ video{
     .container-padding {
         padding: 5% 6%;
     }
+    .home-banner{
+        height: 28rem !important;
+    }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+    .home-banner{
+        height: 24rem !important;
+    }
     
 }
-@media (max-width: 768px) {
-   
+@media (max-width: 767px) {
+    .home-banner{
+        height: 20rem !important;
+    }
 }
 @media (max-width: 596px) {
 }
 @media (max-width: 575px) {
+    .home-banner {
+        background-position: -15vw !important;
+        height: 18rem !important;
+    }    
+    .home-caption {
+        padding: 8% 8% !important;
+        width: 60% !important;
+    }
     .solutions .card {
         display: block;
         text-align: center !important;
@@ -146,9 +139,33 @@ video{
         margin-bottom: 5%;
     }
 }
+@media (max-width: 470px) {
+    .home-banner{
+        background-position: -30vw !important;
+        height: 15rem !important;
+    }    
+    .home-caption {
+        padding: 5% 8% !important;
+        width: 70% !important;
+    }
+}
 @media (max-width: 383px) {
+    .home-banner{
+        background-position: -30vw !important;
+        height: 12rem !important;
+    }
 }
 @media (max-width: 337px) {
+    .home-banner{
+        background-position: -15vw !important;
+        height: 10rem !important;
+    } 
+    .home-caption {
+        padding: 8% 8% !important;
+        width: 75% !important;
+        font-size: 1.7rem !important;
+        font-weight: 400 ! important;
+    }
 }
 
 /*========== BOOTSTRAP BREAK POINTS:

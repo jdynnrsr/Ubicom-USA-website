@@ -5,15 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ubicom U.S.A., Inc.</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel = "icon" href="../img/Ubicom USA icon png.png" type = "image/x-icon">
+
+    <!-- Facebook -->
+    <meta property="og:title" content="Ubicom U.S.A.">
+    <meta property="og:description" content="Go GLOBAL">
+    <meta property="og:image" content="http://ubicom-usa-inc.s3-website-us-east-1.amazonaws.com/img/Ubicom%20USA%20no%20BG.png">
+    <meta property="og:url" content="http://ubicom-usa-inc.s3-website-us-east-1.amazonaws.com">
+    <meta property="og:site_name" content="Ubicom U.S.A., Inc.">
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Ubicom U.S.A.">
+    <meta name="twitter:description" content=" Go GLOBAL">
+    <meta name="twitter:image" content=" http://ubicom-usa-inc.s3-website-us-east-1.amazonaws.com/img/Ubicom%20USA%20no%20BG.png">
+    <meta name="twitter:url" content="http://ubicom-usa-inc.s3-website-us-east-1.amazonaws.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- css and bootstrap -->
+    <link href="footer-link.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://kit.fontawesome.com/40ac460209.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="./main.js"></script>
-</head>
 <body>
     <div id="container-fluid">
 <!-- NAVIGATION -->
@@ -33,11 +50,27 @@
                         <li class="nav-item active">
                             <a href="index.html" class="nav-link">HOME</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="Solutions.html" class="nav-link">SOLUTIONS</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Solutions.html" role="button" aria-haspopup="true" aria-expanded="false">SOLUTIONS</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="Solutions.html">OVERVIEW</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Solutions-tab/Solutions.html">SOLUTIONS</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Solutions.html#Healthcare">Healthcare Analytics</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Solutions.html#Automotive">Automotive Test Automation</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Solutions-tab/Services.html">SERVICES</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Services.html#Development">Software Development and Testing</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Services.html#RPA">Robotic Process Automation</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a href="Company.html" class="nav-link">COMPANY</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Company.html" aria-haspopup="true" aria-expanded="false">COMPANY</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="Company.html#companyProfile">COMPANY PROFILE</a>
+                              <a class="dropdown-item" href="Company.html#History">HISTORY</a>
+                              <a class="dropdown-item" href="Company.html#GlobalCompanies">GLOBAL COMPANIES</a>
+                            </div>
                         </li>
                     </ul>
                     <a href="Contact.html" class="btn button">CONTACT US</a>
@@ -46,62 +79,62 @@
         </nav>
 
     
-        <!-- <p class="previous-page">
+        <p class="previous-page">
             <a href="index.html"><i class="fas fa-home"></i></a>
             <label>|</label>
-            <label>Contact</label>
-        </p> -->
-
-        <!-- HEADER BANNER -->
-        <div class="jumbotron jumbotron-fluid header-banner">
-            <h3 class="banner-caption">Email us with any questions or inquiries. We should be happy to answer your questions and set up a meeting with you.</h3>
+            <label>Terms of Use</label>
+        </p>
+        <h1 class="header">TERMS OF USE</h1>
+        <div class="content">
+            <p>
+                Ubicom U.S.A, Inc.’s mission is to contribute to the advancement and development of society through providing high quality products and services made available by our premier technology and creativity. We believe that, in order to fulfill such mission, all our employees must recognize the importance of information assets, actively use the information technology, and use information effectively. As members of information society, we must protect our information assets from risks that may arise from the use of information technology. As we seriously recognize the importance of information security, we improve the security level of our information assets and thoroughly implement information security management measures in order to strengthen our company’s credibility in conducting business activities. Advanced World Systems, Inc. defines our information security policy as follows, in alignment with our management policy, placing the highest priority to the confidentiality of our customers’ information assets and our internal information assets, and also aiming to ensure entirety and availability of information in our plan documents and proposal documents.
+            </p>
         </div>
-
-        <h1 class="display-1">TERMS</h1>
     </div>
-    
+
 <!-- FOOTER -->
-    <div id="footer" class="footer">
+    <div id="footer">
         <div class="footer-contactUs">
-            <h1>
-                Stay in Touch
-                <button type="button" class="btn btn-outline-light btn-lg">CONTACT US</button>
-            </h1>
+            <h1>Stay in Touch</h1>
+            <button type="button" class="btn btn-outline-light btn-lg">CONTACT US</button>
         </div>
-        <div class="footer-label">
-            <div class="company-info">
-                <label>
+        <div class="footer">
+            <div class="footer-l1">
+                <div class="footer-c1">
                     <img class="footer-logo" src="img/Ubicom USA no BG.png" alt="UBICOM USA, INC." >
-                    <address>27-01 Queens Plaza, North Long
-                        <br>
-                        Island City, New York, 11101
-                    </address>
-                </label>
-                
-                <label class="links">
-                    <ul class="nav footer-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="Solutions.html">SOLUTIONS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Company.html">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Contact.html">CONTACT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Company.html#groupCompany">LOCATIONS</a>
-                        </li>
-                    </ul>
-                
-                    <label>Copyright 2019. Ubicom U.S.A., Inc.</label>
-                    <br>
+                </div>
+                <div class="social-media order-xl-last">
+                    <a class="nav-link justify-self-end active" href="https://www.linkedin.com/company/ubicom-usa-inc/about/">
+                        <i class="fab fa-linkedin-in"></i></a>
+                    <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i></a>
+                    <a class="nav-link" href="https://twitter.com/?lang=en">
+                        <i class="fab fa-twitter"></i></a>                
+                </div>
+                <div class="footer-c2">
+                    <div class="footer-nav">
+                        <a class="nav-link active" href="Solutions.html">SOLUTIONS</a>
+                        <a class="nav-link" href="Company.html">ABOUT US</a>
+                        <a class="nav-link" href="Company.html#GlobalCompanies">GLOBAL COMPANIES</a>
+                        <a class="nav-link" href="Contact.html">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-l2 align-self-center">
+                <div class="footer-c1">
+                    © 2019 Ubicom U.S.A., Inc. All Rights Reserved.
+                </div>
+                <div class="footer-l2-mid">
                     <a href="Terms.html" class="footer-link">Terms</a>
                     <a href="#" class="footer-link">|</a>
                     <a href="Information-Security.html" class="footer-link">Privacy Policy</a>
                     <a href="#" class="footer-link">|</a>
                     <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
-                </label>
+                </div>
+                <div class="footer-last">
+                    Free background photos from
+                    <a href="https://pngtree.com/free-backgrounds">pngtree.com</a>  
+                </div>
             </div>
         </div>
     </div>

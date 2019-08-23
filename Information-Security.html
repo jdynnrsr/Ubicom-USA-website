@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ubicom U.S.A., Inc.</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel = "icon" href="../img/Ubicom USA icon png.png" type = "image/x-icon">
+
+    <!-- Facebook -->
+    <meta property="og:title" content="Ubicom U.S.A.">
+    <meta property="og:description" content="Go GLOBAL">
+    <meta property="og:image" content="http://ubicom-usa-inc.s3-website-us-east-1.amazonaws.com/img/Ubicom%20USA%20no%20BG.png">
+    <meta property="og:url" content="http://ubicom-usa-inc.s3-website-us-east-1.amazonaws.com">
+    <meta property="og:site_name" content="Ubicom U.S.A., Inc.">
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Ubicom U.S.A.">
+    <meta name="twitter:description" content=" Go GLOBAL">
+    <meta name="twitter:image" content=" http://ubicom-usa-inc.s3-website-us-east-1.amazonaws.com/img/Ubicom%20USA%20no%20BG.png">
+    <meta name="twitter:url" content="http://ubicom-usa-inc.s3-website-us-east-1.amazonaws.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- css and bootstrap -->
+    <link href="footer-link.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -15,36 +33,52 @@
     <script src="./main.js"></script>
 </head>
 <body>
-    <div id="container">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div id="container-fluid">
+<!-- NAVIGATION -->
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <div class="navbar-logo">
+                <div class="navbar-brand">
                     <a href="index.html ">
-                        <img src="img/Ubicom USA logo.png" alt="Ubicom USA Logo">
+                        <img src="img/Ubicom USA no BG.png" alt="Ubicom USA Logo">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-bars"></i>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a href="index.html" class="nav-link">HOME</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="Solutions.html" class="nav-link">SOLUTIONS</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Solutions.html" role="button" aria-haspopup="true" aria-expanded="false">SOLUTIONS</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="Solutions.html">OVERVIEW</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Solutions-tab/Solutions.html">SOLUTIONS</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Solutions.html#Healthcare">Healthcare Analytics</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Solutions.html#Automotive">Automotive Test Automation</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="Solutions-tab/Services.html">SERVICES</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Services.html#Development">Software Development and Testing</a>
+                              <a class="dropdown-item subpage" href="Solutions-tab/Services.html#RPA">Robotic Process Automation</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a href="Company.html" class="nav-link">COMPANY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="Contact.html" class="nav-link">CONTACT</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Company.html" aria-haspopup="true" aria-expanded="false">COMPANY</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="Company.html#companyProfile">COMPANY PROFILE</a>
+                              <a class="dropdown-item" href="Company.html#History">HISTORY</a>
+                              <a class="dropdown-item" href="Company.html#GlobalCompanies">GLOBAL COMPANIES</a>
+                            </div>
                         </li>
                     </ul>
+                    <a href="Contact.html" class="btn button">CONTACT US</a>
                 </div>
             </div>
         </nav>
+
         
         <!-- CONTENT -->
         <p class="previous-page">
@@ -52,32 +86,56 @@
             <label>|</label>
             <label>Information Security Policy</label>
         </p>
-        <p class="header">INFORMATION SECURITY POLICY</p>
+        <h1 class="header">PRIVACY POLICY</h1>
         <div class="content">
             <p>
                 Ubicom U.S.A, Inc.’s mission is to contribute to the advancement and development of society through providing high quality products and services made available by our premier technology and creativity. We believe that, in order to fulfill such mission, all our employees must recognize the importance of information assets, actively use the information technology, and use information effectively. As members of information society, we must protect our information assets from risks that may arise from the use of information technology. As we seriously recognize the importance of information security, we improve the security level of our information assets and thoroughly implement information security management measures in order to strengthen our company’s credibility in conducting business activities. Advanced World Systems, Inc. defines our information security policy as follows, in alignment with our management policy, placing the highest priority to the confidentiality of our customers’ information assets and our internal information assets, and also aiming to ensure entirety and availability of information in our plan documents and proposal documents.
             </p>
         </div>
-        <div id="footer">
-            <div class="container-fluid footer-label">
-                <div class="company-info">
-                    <label>
-                        <label>27-01 Queens Plaza North Long Island City 11101, New York</label>
-                        <label>|</label>
-                        <label>(760) 123 - 4567</label>
-                    </label>
+    </div>
+
+<!-- FOOTER -->
+    <div id="footer">
+        <div class="footer-contactUs">
+            <h1>Stay in Touch</h1>
+            <button type="button" class="btn btn-outline-light btn-lg">CONTACT US</button>
+        </div>
+        <div class="footer">
+            <div class="footer-l1">
+                <div class="footer-c1">
+                    <img class="footer-logo" src="img/Ubicom USA no BG.png" alt="UBICOM USA, INC." >
                 </div>
-                <div class="footer-item">
-                    <label>
-                        <a href="Contact.html" class="footer-link">Contact Us</a>
-                        <a href="#" class="footer-link">|</a>
-                        <a href="Information-Security.html" class="footer-link">Information Security Policy</a>
-                        <a href="#" class="footer-link">|</a>
-                        <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
-                    </label>
-                </div>           
-                <div class=company-name>
-                    <label>Copyright 2019. Ubicom U.S.A., Inc.</label>
+                <div class="social-media order-xl-last">
+                    <a class="nav-link justify-self-end active" href="https://www.linkedin.com/company/ubicom-usa-inc/about/">
+                        <i class="fab fa-linkedin-in"></i></a>
+                    <a class="nav-link" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i></a>
+                    <a class="nav-link" href="https://twitter.com/?lang=en">
+                        <i class="fab fa-twitter"></i></a>                
+                </div>
+                <div class="footer-c2">
+                    <div class="footer-nav">
+                        <a class="nav-link active" href="Solutions.html">SOLUTIONS</a>
+                        <a class="nav-link" href="Company.html">ABOUT US</a>
+                        <a class="nav-link" href="Company.html#GlobalCompanies">GLOBAL COMPANIES</a>
+                        <a class="nav-link" href="Contact.html">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-l2 align-self-center">
+                <div class="footer-c1">
+                    © 2019 Ubicom U.S.A., Inc. All Rights Reserved.
+                </div>
+                <div class="footer-l2-mid">
+                    <a href="Terms.html" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">|</a>
+                    <a href="Information-Security.html" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">|</a>
+                    <a href="Disclaimer.html" class="footer-link">Disclaimer</a>
+                </div>
+                <div class="footer-last">
+                    Free background photos from
+                    <a href="https://pngtree.com/free-backgrounds">pngtree.com</a>  
                 </div>
             </div>
         </div>

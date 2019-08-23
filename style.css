@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,900&display=swap');
-@import url('footer-link.css');
-@import url('company.css');
 
 
 html {
@@ -9,7 +7,7 @@ html {
 }
 body{
     font-family: 'Roboto' !important;
-    color: #3E3E3E;
+    color: #3E3E3E !important;
     height: 100%;
     width: 100%;
     overflow-y: auto;
@@ -43,14 +41,14 @@ nav.navbar {
     padding-left: 5% !important;
 } */
 .navbar-brand img{
-    height: 5rem;
+    height: 4.5rem;
     margin: 3% 0 !important;
 }
 .navbar button {
     border: none !important;
     background-color: none !important;
     font-size: 2.5rem;
-    color: #025391 !important;
+    color: #0B6DAC !important;
     z-index: 10;
 
 }
@@ -58,7 +56,7 @@ nav.navbar {
     padding: 2% 1% !important;
 }
 #navbarResponsive .nav-item {
-    font-size:110%;
+    /* font-size:110%; */
     font-weight: 500;
     padding-left: 8%;
 }
@@ -66,14 +64,17 @@ nav.navbar {
     color: #00A8FB !important;
 }
 #navbarResponsive .button{
-    font-size:110%;
-    background: #0E83CE !important;
+    font-size:inherit;
+    background: #0B6DAC !important;
     color: #fff !important;
     border-radius: 0% !important;
     font-weight: 400 !important;
-    padding: 1rem;
+    /* padding: 1%; */
+    height: 4.5rem;
     text-align: right;
     margin-left: 4%;
+    display: flex;
+    align-items: center;
 }
 .dropdown-menu {
     border: none !important;
@@ -90,13 +91,14 @@ nav.navbar {
 }
 
 .header-banner{
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex !important;
     align-content: left;
     justify-content: center !important;
     flex-direction: column;
+    margin-bottom: 0% !important;
     height: 18rem;
 }
 
@@ -115,7 +117,7 @@ nav.navbar {
 }
 
 .header {
-    color: #146DD2;
+    color: #015391;
     font-weight: 500 !important;
     text-align: center;
     /* font-size: 150% !important; */
@@ -140,7 +142,7 @@ nav.navbar {
 }
 .footer-contactUs {
     width: 100%;
-    background: #0E83CE;
+    background: #0B6DAC;
     color: rgb(255, 255, 255) !important;
     padding: 1rem;
     align-items: center;
@@ -192,7 +194,7 @@ nav.navbar {
     padding: 0 0 !important;
 }
 .social-media i {
-    color: #0E83CE;
+    color: #0B6DAC;
     font-size: 2rem;
 }
 .footer-last p{
@@ -235,14 +237,13 @@ nav.navbar {
 
 @media (max-width: 1217px) {
     .navbar-brand img{
-        height: 4.5rem;
+        /* height: 4.rem; */
         margin: 2% 0 !important;
     }
     nav.navbar {
         padding: 0 3%;
     }
     #navbarResponsive .nav-item {
-        font-size:100%;
         padding-left: 6%;
     }     
 }
@@ -261,9 +262,18 @@ nav.navbar {
     nav.navbar {
         padding: 0 2%;
     }
+    .navbar-brand img{
+        height: 3.5rem;
+        margin: 2% 0 !important;
+    }
+    #navbarResponsive .button{
+        padding: 1%;
+        text-align: right;
+        margin-left: 4%;
+        height: 3.5rem;
+    }
     #navbarResponsive .nav-item {
-        font-size:100%;
-        padding-left: 4%;
+        padding-left: 3%;
     } 
 }
 
@@ -295,14 +305,22 @@ nav.navbar {
         font-size: 1.75rem;
     } 
 }
-@media (max-width: 768px) {
-
+@media (max-width: 767px) {
+    .header-banner{
+        height: 16rem;
+    }
 }
 @media (max-width: 589px) {
     .footer-nav .nav-link {
         text-align: center;
         font-size: 90%;
         padding: .25rem .5rem
+    }
+}
+@media (max-width: 575px) {
+    .header-banner{
+        height: 14rem;
+        background-position: -10vw;
     }
 }
 @media (max-width: 538px) {
@@ -319,6 +337,9 @@ nav.navbar {
     h4 {font-size: 1.6rem !important;}
     h5 {font-size: 1.4rem !important;}
     h6 {font-size: 1.2rem !important;}
+    .header-banner{
+        height: 13rem;
+    }
     
     .footer-contactUs {
         display: block;
@@ -343,8 +364,16 @@ nav.navbar {
         height: 3.5rem;
         margin: 2% 0 !important;
     }
+    .header-banner{
+        height: 12rem;
+        background-position: -20vw;
+    }
 }
-@media (max-width: 441px) {
+@media (max-width: 383px) {
+    .header-banner{
+        height: 10rem;
+        background-position: -20vw;
+    }
 }
 @media (max-width: 348px) {
     .btn-lg {font-size: .75rem !important}
@@ -354,6 +383,11 @@ nav.navbar {
     h4 {font-size: 1.3rem !important;}
     h5 {font-size: 1.2rem !important;}
     h6 {font-size: 1rem !important;}
+
+    .header-banner{
+        height: 8rem;
+        background-position: -10vw;
+    }
 }
 
 /* 

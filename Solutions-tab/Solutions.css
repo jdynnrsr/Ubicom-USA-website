@@ -2,55 +2,58 @@
 @import url('../style.css');
 
 
-#Solutions, #Services {
-    font-size: 90% !important;
-}
 .header-banner{
-    background-image: url("img/Solutions/B-Solutions.png") !important;
+    background-image: url("../img/theme\ color.png") !important;
     width: 100%;
+    align-content: center !important;
+    height: 15rem !important;
 }
 .banner-caption {
     margin-bottom: 0% !important;
     text-align: center;
-    padding:6% 6%;
-    width: 50%;
+    width: 100%;
     color: white;
 }
-.banner-text {
-    line-height: 1.5;
-    font-weight: 300 !important;
-}
 .container-padding {
-    padding: 5% 6%;
+    padding: 3% 5%;
 }
-.card-col {
-    padding: 0 0 !important;
-    box-shadow: 0 1px 5px 0 rgb(157, 194, 218);
-    margin-bottom: 5% !important;
+.jumbotron {
+    background-color: rgba(0, 157, 255, 0.247) !important;
 }
-.card-title {
-    color: #1689C3;
+#Healthcare, #Automotive {
+    font-size: 80%;
+    line-height: 2 !important;
 }
-.btn-link {
-    color: #0E83CE !important;
+.jumbotron {
+    padding: unset !important;
 }
-.card-horizontal {
-    box-shadow: 0 1px 5px 0 rgb(157, 194, 218);
-    margin-bottom: 5% !important;
-}
-.services .card-body {
-    padding: 2% 2%;
+.sol-img {
+    padding-bottom: 3%;
     width: 100%;
 }
-.serv-img {
-    padding: 0 0 !important;
-    width: 100%;
+.list {
+    padding-left: 5%;
+    padding-top: 3%;
 }
-.card-footer {
-    text-align: right;
-    background-color: transparent !important;
-    border-top: none !important;
+.list2 {
+    position: absolute;
+    visibility: hidden;
 }
+.bullet-title {
+    color: #1589C3;
+}
+.sol-title {
+    color: #0B6DAC;
+    margin-bottom: 2% !important;
+}
+.sol-title2 {
+    position: absolute;
+    visibility: hidden;
+}
+.sol-details {
+    text-align: justify;
+}
+
 
 /* ---Media Queries---*/
 @media (max-width: 1100px) {
@@ -60,23 +63,26 @@
 
 }
 @media (max-width: 767px) {
-    /* .card-col {
-        width: 80%;
-    } */
-    #Services .card-title{
+    .list {
+        position: absolute;
+        visibility: hidden;
+    }
+    .list2 {
+        position: relative;
+        visibility: visible;
+        padding-left: 5%;
+        padding-top: 0;
+    }
+    .sol-title {
+        position: absolute;
+        visibility: hidden;
+    }
+    .sol-title2 {
         text-align: center;
-    }
-    #Services .card-footer {
-        text-align: left;
-    }
-    .serv-img {
-        width: 100%;
-    }
-    .card-horizontal {
-        padding: 0 0 !important;
-        display: block !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        position: relative;
+        visibility: visible;
+        color: #0B6DAC;
+        margin-bottom: 2% !important;
     }
 }
 @media (max-width: 596px) {
