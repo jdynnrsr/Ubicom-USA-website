@@ -45,6 +45,12 @@
     padding: 2%;
     margin-top: 4%;
 }
+.about .button:hover {
+    background-color: white !important;
+    border-color: white !important;
+    color: #0B6DAC !important;
+    /* border: solid; */
+}
 /* .hero-video{
     width: 100% !important;
     flex: unset !important;
@@ -69,10 +75,13 @@ video{
     margin-bottom: 2%;
     font-size: 450%;
 }
-.solutions .button {
+.solutions .btn {
     border-radius: 0% !important;
 }
-
+.solutions .btn:hover {
+    color: #0B6DAC !important;
+    background-color: white !important;
+}
 .bg {
     background-position: center;
     background-repeat: no-repeat;

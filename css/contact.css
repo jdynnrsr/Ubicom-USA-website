@@ -115,6 +115,11 @@ mark {
     border-radius: 0% !important;
     float: right !important;
 }
+#ContactForm button:hover {
+    color: #FF333B;
+    background: white;
+    border-color: #FF333B
+}
 #Location {
     height: 70%;
 }

@@ -76,6 +76,12 @@ nav.navbar {
     display: flex;
     align-items: center;
 }
+
+#navbarResponsive .button:hover {
+    background-color: #fff !important;
+    border-color: #0B6DAC !important;
+    color: #0B6DAC !important;
+}
 .dropdown-menu {
     border: none !important;
 }
@@ -87,7 +93,7 @@ nav.navbar {
 }
 .dropdown-item:hover {
     color: white !important;
-    background-color: #00A8FB !important;
+    background-color: #0B6DAC !important;
 }
 
 .header-banner{
@@ -155,6 +161,11 @@ nav.navbar {
     border: solid;
     font-weight: bold;
 }
+.footer-contactUs .btn:hover {
+    color: #0B6DAC !important;
+    background-color: white !important;
+    border-color: #0B6DAC !important;
+}
 .footer {
     padding: 1.1rem 3%;
 }
@@ -196,6 +207,15 @@ nav.navbar {
 .social-media i {
     color: #0B6DAC;
     font-size: 2rem;
+}
+.social-media i:hover {
+    color: white;
+    font-size: 2rem;
+    text-shadow:
+        -1px -1px 0 #0B6DAC,  
+        1px -1px 0 #0B6DAC,
+        -1px 1px 0 #0B6DAC,
+        1px 1px 0 #0B6DAC;
 }
 .footer-last p{
     margin-bottom: 0 !important;
