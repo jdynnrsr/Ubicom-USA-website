@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,900&display=swap');
-@import url('../style.css');
+@import url('../../css/style.css');
 
 
 .header-banner{
-    background-image: url("../img/theme\ color.png") !important;
+    background-image: url("../../img/theme\ color.png") !important;
     width: 100%;
     align-content: center !important;
     height: 15rem !important;
@@ -20,15 +20,14 @@
 .jumbotron {
     background-color: rgba(0, 157, 255, 0.247) !important;
 }
-#Healthcare, #Automotive {
+#Development, #RPA {
     font-size: 80%;
     line-height: 2 !important;
 }
 .jumbotron {
     padding: unset !important;
 }
-.sol-img {
-    padding-bottom: 3%;
+.serv-img {
     width: 100%;
 }
 .list {
@@ -39,18 +38,18 @@
     position: absolute;
     visibility: hidden;
 }
-.bullet-title {
-    color: #1589C3;
-}
-.sol-title {
+.serv-title {
     color: #0B6DAC;
     margin-bottom: 2% !important;
 }
-.sol-title2 {
+.serv-title2 {
     position: absolute;
     visibility: hidden;
 }
-.sol-details {
+.bullet-title {
+    color: #1589C3;
+}
+.serv-details {
     text-align: justify;
 }
 
@@ -73,17 +72,18 @@
         padding-left: 5%;
         padding-top: 0;
     }
-    .sol-title {
+    .serv-title {
         position: absolute;
         visibility: hidden;
     }
-    .sol-title2 {
+    .serv-title2 {
         text-align: center;
         position: relative;
         visibility: visible;
         color: #0B6DAC;
         margin-bottom: 2% !important;
     }
+    
 }
 @media (max-width: 596px) {
     

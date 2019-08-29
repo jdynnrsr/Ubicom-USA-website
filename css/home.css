@@ -16,7 +16,7 @@
 
 }
 .home-banner{
-    background-image: url("./img/Home/Home\ Banner.png");
+    background-image: url("../img/Home/Home\ Banner.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,7 +61,7 @@ video{
 .solutions .card {
     justify-content: center !important;
     padding: 4% 4%;
-    background-image: url("img/theme\ color.png");
+    background-image: url("../img/theme\ color.png");
     background-position: center;
     width: 100%;
 }
@@ -77,7 +77,7 @@ video{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("img/theme\ color.png");
+    background-image: url("../img/theme\ color.png");
 }
 .h-services {
     color: white !important;
