@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900&display=swap');
+@import url('style.css');
+
+
+.notfound {
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+h1{
+    margin-top: -2% !important;
+    color: #dedede;
+    font-size: 8rem !important;
+    font-weight: 900 !important;
+    margin-bottom: -3% !important;
+    z-index: -1 !important;
+}
+h2 {
+    color: black;
+    font-weight: 700 !important;
+    margin-bottom: 0 !important;
+    font-size: 2.5rem !important;
+    z-index: 10 !important;
+}
+.notfound p {
+    margin-bottom: 0 !important;
+    font-size: 1.2rem;
+    z-index: 10 !important;
+    line-height: 1;
+}
+
+/* ---Media Queries---*/
+@media (max-width: 1100px) {
+}
+@media (max-width:991px) {
+    h1{
+        margin-top: -3% !important;
+        margin-bottom: -4% !important;
+    }
+}
+@media (max-width: 767px) {
+    .notfound {
+        width: 80%;
+    }
+    h1{
+        margin-top: -4% !important;
+        font-size: 6rem !important;
+        margin-bottom: -5% !important;
+        z-index: -1 !important;
+    }
+    h2 {
+        font-weight: 600 !important;
+        font-size: 2rem !important;
+    }
+    .notfound p {
+        margin-bottom: 0 !important;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 595px) {
+    .notfound {
+        width: 85%;
+    }
+    h1{
+        margin-top: -4% !important;
+        font-size: 5.5rem !important;
+        margin-bottom: -5% !important;
+        z-index: -1 !important;
+    }
+    h2 {
+        font-size: 1.75rem !important;
+    }
+    .notfound p {
+        margin-bottom: 0 !important;
+        font-size: .9rem;
+    }
+}
+@media (max-width: 526px) {
+    .notfound {
+        width: 90%;
+    }
+    h1{
+        margin-top: -4% !important;
+        font-size: 5rem !important;
+        margin-bottom: -5% !important;
+        z-index: -1 !important;
+    }
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    .notfound p {
+        margin-bottom: 0 !important;
+        font-size: .8rem;
+    }
+}
+@media (max-width: 422px) {
+    .notfound {
+        width: 90%;
+    }
+    h1{
+        margin-top: -4% !important;
+        font-size: 4.5rem !important;
+        margin-bottom: -5% !important;
+        z-index: -1 !important;
+    }
+    h2 {
+        font-size: 1.25rem !important;
+    }
+}
+@media (max-width: 383px) {
+    h1{
+        margin-top: -4% !important;
+        font-size: 4rem !important;
+        margin-bottom: -5% !important;
+        z-index: -1 !important;
+    }
+}
+@media (max-width: 337px) {
+    h1{
+        margin-top: -4% !important;
+        font-size: 3.5rem !important;
+        margin-bottom: -5% !important;
+        z-index: -1 !important;
+    }
+}
+
+/*========== BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default on Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200 px) { ... }
+
+=============*/
